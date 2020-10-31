@@ -1,0 +1,13 @@
+{
+  "name": "finhub-web-api",
+  "version": "0.0.1",
+  "description": "backend api for finhub web app",
+  "main": "index.js",
+  "author": "Ivan Averin",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@apollo/gateway": "^0.21.0",
+    "apollo-server": "^2.19.0",
+    "graphql": "^15.4.0"
+  }}
