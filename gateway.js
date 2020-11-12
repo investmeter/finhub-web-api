@@ -7,7 +7,6 @@ const  isProd = false
 const gatewayOptions = {
     serviceList: [
         { name: "strapi", url: "http://localhost:1337/graphql" }
-
     ],
     debug: isProd ? false : true
 }
