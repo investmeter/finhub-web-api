@@ -1,0 +1,6 @@
+# knex db configuration
+---
+database:
+  client: sqlite3
+  connection:
+    filename: ./dev.sqlite3
