@@ -1,3 +1,8 @@
+# knexfile
+knexfile.js
+# sqlite
+*.sqlite3
+
 # Logs
 logs
 *.log
@@ -103,3 +108,4 @@ dist
 # TernJS port file
 .tern-port
 /yarn.lock
+

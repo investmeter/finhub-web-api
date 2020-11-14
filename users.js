@@ -1,6 +1,8 @@
 const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
 const { v4 } = require('uuid');
+const config = require('config');
+const Knex = require('knex');
 
 const typeDefs = gql`
   type Query {
@@ -18,6 +20,12 @@ const typeDefs = gql`
   }
  
 `;
+
+
+
+const knexConfig = config.get('database')
+knex = Knex(knexConfig)
+
 
 
 let users = [
@@ -46,6 +54,9 @@ const registerUser=(email, passHash) => {
        passHash: passHash
    }
     users.push(u)
+
+
+
     return u
 }
 

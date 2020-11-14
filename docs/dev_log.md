@@ -1,8 +1,6 @@
 
 ## Registration and auth
-- mock graphQl auth schema 
-- Use prisma as ORM https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch-prisma-migrate-node-postgres 
-
+- mock graphQl auth schema
 graphQl queries
 ```
 query get_users{
@@ -19,7 +17,10 @@ mutation create_user{
   }
 }
 
-```
+``` 
+- user knex and apollo sql data source
+
+
 
 ## Roadmap
 - Switch off federation and manually wrap strapi because of need of using subscriptions
