@@ -1,8 +1,11 @@
 const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
+
 const { v4 } = require('uuid');
 const config = require('config');
 const Knex = require('knex');
+
+const database = require("./core/database");
 
 const typeDefs = gql`
   type Query {
@@ -15,7 +18,7 @@ const typeDefs = gql`
   }
 
   type User @key(fields: "email" ) {
-    id: ID!
+    user_uuid: ID!
     email: String!
   }
  
@@ -24,7 +27,9 @@ const typeDefs = gql`
 
 
 const knexConfig = config.get('database')
-knex = Knex(knexConfig)
+const db = new database(knexConfig);
+
+// knex = Knex(knexConfig)
 
 
 
@@ -47,17 +52,16 @@ const fetchUserByEmail= (emailToFind) =>{
      return undefined
 }
 
-const registerUser=(email, passHash) => {
+const registerUser = async (email, passHash) => {
    const u = {
-       id: v4(),
+       user_uuid: v4(),
        email: email,
        passHash: passHash
    }
-    users.push(u)
 
-
-
-    return u
+   let uss =  await db.createUser(u)
+   console.log(uss)
+   return  uss
 }
 
 const resolvers = {
@@ -84,7 +88,7 @@ const resolvers = {
 }
 
 const server = new ApolloServer({
-    schema: buildFederatedSchema([{ typeDefs, resolvers }])
+    schema: buildFederatedSchema([{typeDefs, resolvers, dataSources: () => ({ db }) }])
 });
 
 server.listen(4001).then(({ url }) => {
