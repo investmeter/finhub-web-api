@@ -7,11 +7,11 @@ class MyDatabase extends SQLDataSource {
         return this.knex('users').insert(user, 'user_uuid').then(
              (result)=>{
                  console.log("OK")
-                 console.log(user)
+                 console.log("Result ", result)
+                 console.log("User ", user)
                  return user
              }
-         ).catch((error) =>{console.log(error)});
-
+         )
          // return user
     }
 }

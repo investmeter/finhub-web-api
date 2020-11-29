@@ -59,9 +59,14 @@ const registerUser = async (email, passHash) => {
        passHash: passHash
    }
 
-   let uss =  await db.createUser(u)
+   try {
+   let uss = await db.createUser(u)
    console.log(uss)
    return  uss
+   }
+   catch (error){
+       console.log("Error ", error)
+   }
 }
 
 const resolvers = {
