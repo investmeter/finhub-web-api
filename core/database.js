@@ -14,6 +14,22 @@ class MyDatabase extends SQLDataSource {
          )
          // return user
     }
+
+    authUser(email, passHash){
+        return this.knex('users').select().where({email:email, passHash:passHash}).then(
+            (result)=>{
+                console.log("Auth OK")
+                console.log("Result ", result)
+                return {
+                        user_uuid:result[0]["user_uuid"],
+                        email: result[0]["email"]
+                        }
+            }
+        )
+        // return user
+    }
+
+
 }
 
 module.exports = MyDatabase;
