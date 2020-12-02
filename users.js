@@ -10,16 +10,22 @@ const database = require("./core/database");
 const typeDefs = gql`
   type Query {
     user(email:String): User,
+    authUser(email:String, passHash:String): User
     users: [User]
   }
   
   type Mutation {
-     registerUser(email: String, passHash:String):User
+     registerUser(email: String, passHash:String): RegisterUserResult
   }
 
   type User @key(fields: "email" ) {
     user_uuid: ID!
     email: String!
+  }
+  
+  type RegisterUserResult{
+    user: User,
+    result: String
   }
  
 `;
@@ -52,7 +58,20 @@ const fetchUserByEmail= (emailToFind) =>{
      return undefined
 }
 
-const registerUser = async (email, passHash) => {
+const authUser = async (email, passHash) =>{
+    try {
+        const user = await db.authUser(email, passHash)
+        return user
+    }
+    catch (err){
+        console.log(err)
+        return undefined
+
+    }
+
+}
+
+ const registerUser = async (email, passHash) => {
    const u = {
        user_uuid: v4(),
        email: email,
@@ -62,10 +81,20 @@ const registerUser = async (email, passHash) => {
    try {
    let uss = await db.createUser(u)
    console.log(uss)
-   return  uss
+   return  {
+       user: {
+           user_uuid:u.user_uuid,
+           email:u.email,
+       },
+       result:"OK"
+    }
    }
    catch (error){
        console.log("Error ", error)
+       return {
+           user: undefined,
+           result:"ERROR"
+       }
    }
 }
 
@@ -77,6 +106,9 @@ const resolvers = {
 
         users(parent, args, context, info) {
             return users
+        },
+        authUser(parent, args, context, info){
+            return authUser(args.email, args.passHash)
         }
     },
     Mutation: {

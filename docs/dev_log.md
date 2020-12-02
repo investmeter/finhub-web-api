@@ -24,3 +24,5 @@ mutation create_user{
 
 ## Roadmap
 - Switch off federation and manually wrap strapi because of need of using subscriptions
+V Registration method
+- Authorization from Db
