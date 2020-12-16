@@ -1,25 +1,13 @@
-const { ApolloServer } = require('apollo-server');
-const { ApolloGateway, RemoteGraphQLDataSource, GatewayConfig } = require('@apollo/gateway');
-
+const { ApolloServer, gql } = require('apollo-server');
+// const { ApolloGateway, RemoteGraphQLDataSource, GatewayConfig } = require('@apollo/gateway');
+const {_} = require('lodash');
 const  isProd = false
 
+const typeDefs = _.merge(require("./users").typeDefs)
+const resolvers = _.merge(require("./users").resolvers)
 
-const gatewayOptions = {
-    serviceList: [
-         { name: "strapi", url: "http://localhost:1337/graphql" },
-        //{ name:"users", url: "http://localhost:4001" }
-    ],
-    debug: isProd ? false : true
-}
+const server = new ApolloServer({typeDefs, resolvers})
 
-const gateway = new ApolloGateway(gatewayOptions);
-const server = new ApolloServer({
-    gateway,
-    subscriptions: false, // Must be disabled with the gateway; see above.
-});
-
-const port = process.env.PORT || 4000;
-server.listen({ port }).then(({ url }) => {
-    console.log(`🚀 Server ready at ${url}`);
-});
-
+server.listen(4000).then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}`)
+})
