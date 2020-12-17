@@ -5,9 +5,9 @@ const config = require('config');
 
 const database = require("./core/database");
 
-const typeDefs = gql`
+const typeDefs = `
   type Query {
-    user(email:String): User,
+    user(email:String): User
     authUser(email:String, passHash:String): User
     users: [User]
   }
