@@ -1,6 +1,4 @@
 
-Todo: Decide on federation instead of  
-
 
 ## Registration and auth
 - mock graphQl auth schema
@@ -11,8 +9,11 @@ Todo: Decide on federation instead of
 - [x] Registration method
 - [x] Authorization from Db
 - [x] Switch off federation and manually wrap strapi because of need of using subscriptions
-     - [ ] create wrapper for User 
-     - [ ] create wrapper for strapi??
-     - [ ] put in gateway
+     - [X] create wrapper for User 
+     - [X] create wrapper for strapi??
+     - [X] put in gateway
+- [ ] Store portfolio
+- [ ] Display portfolio  
 - [ ]~(optional) store users in strapi
+  
 
