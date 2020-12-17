@@ -5,6 +5,9 @@ const { gql } = require('apollo-server');
 
 
 const typeDefs = `
+     scalar JSON
+     scalar DateTime
+        
      enum ENUM_SECURITY_TYPE {
         bond
         stock
