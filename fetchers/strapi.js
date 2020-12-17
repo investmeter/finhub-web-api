@@ -29,23 +29,24 @@ const typeDefs = `
     
     
     type Query { 
-        securities(sort: String,limit: Int,start: Int,where: JSON): [Security]
+        securities(sort: String,limit: Int,start: Int,search: String): [Security]
     }
 `
 const fetchSecurities = async (args, strapiConfig) =>  {
-    const limit = args.limit || ""
-    const query = args.query || {}
+    const limit = args.limit || 0
+    const search = args.search || ""
 
-    const gqlQuery = gql`query securities($where:JSON){ 
-                        securities(where: $where) {
+    const gqlQuery = gql`query securities($limit: Int, $search:String){ 
+                        securities(limit:$limit, where: {_or:[{ticker_contains: $search},{title_contains: $search}]}) {
                         company:title
                         ticker
                       }
                    }
-        
       `
     try {
-        const ret =await request(strapiConfig["graphql_endpoint"], gqlQuery, {where: args.where})
+        const ret =await request(strapiConfig["graphql_endpoint"], gqlQuery, {
+            limit:limit,
+            search: search})
     return  ret.securities
     }
     catch(e){
