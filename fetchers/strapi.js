@@ -1,7 +1,8 @@
 // fetch securities information from strapi
 
 const { request } = require('graphql-request')
-const { gql } = require('apollo-server');
+const { gql } = require('graphql-request');
+const GraphQLJSON = require('graphql-type-json');
 
 
 const typeDefs = `
@@ -28,29 +29,29 @@ const typeDefs = `
     
     
     type Query { 
-        securities(
-                sort: String
-                limit: Int
-                start: Int
-                where: JSON
-                # publicationState: PublicationState
-        ): [Security]
+        securities(sort: String,limit: Int,start: Int,where: JSON): [Security]
     }
 `
 const fetchSecurities = async (args, strapiConfig) =>  {
     const limit = args.limit || ""
     const query = args.query || {}
 
-    const gqlQuery = gql`query securities($query:String){
-                        securities(where: {_or:[{ticker_contains: $query},{title_contains:$query}]}) {
+    const gqlQuery = gql`query securities($where:JSON){ 
+                        securities(where: $where) {
                         company:title
                         ticker
                       }
-        }
+                   }
+        
       `
-
-    return await request(strapiConfig["graphql_endpoint"], gqlQuery, {query: args.query} )
-
+    try {
+        const ret =await request(strapiConfig["graphql_endpoint"], gqlQuery, {where: args.where})
+    return  ret.securities
+    }
+    catch(e){
+        console.log(e)
+        return []
+    }
 
 }
 
@@ -58,8 +59,10 @@ const resolvers = {
     Query: {
         securities(parent, args, context, info) {
             return fetchSecurities(args, context.config.get("strapi"))
-        },
-    }
+        }
+    },
+    JSON: GraphQLJSON
+
 }
 
 const StrapiSchema = {

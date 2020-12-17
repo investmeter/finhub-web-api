@@ -6,10 +6,10 @@ const {_} = require('lodash');
 const  isProd = false
 
 const typeDefs = gql(require("./users").typeDefs+ require("./fetchers/strapi").typeDefs)
-const resolvers = _.merge(require("./users").resolvers, require("./fetchers/strapi").resolvers)
+//const resolvers = _.merge(require("./users").resolvers, require("./fetchers/strapi").resolvers)
 
-const gatewaySchema = mergeSchemas({schemas: [require("./users").typeDefs, require("./fetchers/strapi").typeDefs],
-    resolvers:resolvers})
+const gatewaySchema = mergeSchemas({schemas: [typeDefs],
+    resolvers:[require("./users").resolvers, require("./fetchers/strapi").resolvers]})
 
 const server = new ApolloServer({schema:gatewaySchema, context: {config: config}})
 

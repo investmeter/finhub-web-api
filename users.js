@@ -7,7 +7,7 @@ const database = require("./core/database");
 
 const typeDefs = `
   type Query {
-    user(email:String): User,
+    user(email:String): User
     authUser(email:String, passHash:String): User
     users: [User]
   }
