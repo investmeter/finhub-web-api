@@ -12,6 +12,7 @@
      - [X] create wrapper for User 
      - [X] create wrapper for strapi??
      - [X] put in gateway
+- [ ] check JWT from frontend to get user id   
 - [ ] Store portfolio
 - [ ] Display portfolio  
 - [ ]~(optional) store users in strapi
