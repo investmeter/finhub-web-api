@@ -2,6 +2,7 @@ const { gql } = require('apollo-server');
 
 const { v4 } = require('uuid');
 const config = require('config');
+const security = require('./core/security');
 
 const database = require("./core/database");
 
@@ -10,6 +11,8 @@ const typeDefs = `
     user(email:String): User
     authUser(email:String, passHash:String): User
     users: [User]
+    webClientToken(user_uuid:String):jwtToken 
+    
   }
   
   type Mutation {
@@ -25,6 +28,10 @@ const typeDefs = `
     user: User,
     result: String
   }
+ 
+ type jwtToken{
+    key: String
+ }
  
 `;
 
@@ -91,6 +98,14 @@ const authUser = async ( email, passHash) =>{
            result:"ERROR"
        }
    }
+}
+
+const webClientToken= (userUuid, webClientSecret, options) => {
+    return jwt.sign({
+        data: {
+            user_uuid: userUuid
+        }
+    }, webClientSecret, options);
 }
 
 const resolvers = {

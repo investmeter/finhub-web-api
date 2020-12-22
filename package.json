@@ -6,6 +6,8 @@
   "author": "Ivan Averin",
   "license": "MIT",
   "private": true,
+  "scripts":{
+  "test": "mocha"},
   "dependencies": {
     "@apollo/gateway": "^0.21.0",
     "apollo-server": "^2.19.0",
@@ -15,6 +17,7 @@
     "graphql-request": "^3.3.0",
     "graphql-type-json": "^0.3.2",
     "js-yaml": "^3.14.0",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.12",
     "lodash": "^4.17.20",
     "pg": "^8.5.1",
@@ -22,6 +25,8 @@
     "uuid": "^8.3.1"
   },
   "devDependencies": {
-    "@prisma/cli": "^2.11.0"
+    "@prisma/cli": "^2.11.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
   }
 }
