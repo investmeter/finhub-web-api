@@ -1,5 +1,9 @@
 # knex db configuration
 ---
+token:
+  expiresIn: 36000
+  secret: "super secret"
+
 database:
   client: sqlite3
   connection:
