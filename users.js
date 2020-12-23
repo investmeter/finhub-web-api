@@ -11,7 +11,7 @@ const typeDefs = `
     user(email:String): User
     authUser(email:String, passHash:String): User
     users: [User]
-    webClientToken(user_uuid:String):jwtToken 
+    webClientToken(user_uuid:String):String 
     
   }
   
@@ -21,17 +21,16 @@ const typeDefs = `
 
   type User{
     user_uuid: ID!
-    email: String!
+    email: String!,
+    token: String
   }
   
   type RegisterUserResult{
     user: User,
     result: String
+    
   }
  
- type jwtToken{
-    key: String
- }
  
 `;
 
@@ -63,7 +62,11 @@ const fetchUserByEmail= (emailToFind) =>{
 
 const authUser = async ( email, passHash) =>{
     try {
-        return await db.authUser(email, passHash)
+        const user = await db.authUser(email, passHash)
+        return {
+            ...user,
+            token: webClientToken(user.user_uuid,config.get('token').secret, config.get('token').expiresIn )
+        }
     }
     catch (err){
         console.log(err)
@@ -86,7 +89,7 @@ const authUser = async ( email, passHash) =>{
    return  {
        user: {
            user_uuid:u.user_uuid,
-           email:u.email,
+           email:u.email
        },
        result:"OK"
     }
@@ -100,12 +103,8 @@ const authUser = async ( email, passHash) =>{
    }
 }
 
-const webClientToken= (userUuid, webClientSecret, options) => {
-    return jwt.sign({
-        data: {
-            user_uuid: userUuid
-        }
-    }, webClientSecret, options);
+const webClientToken= (userUuid, webClientSecret, exipiersIn = 60*60) => {
+    return security.jwtToken(userUuid, {}, webClientSecret, exipiersIn)
 }
 
 const resolvers = {
