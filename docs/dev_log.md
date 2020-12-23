@@ -15,8 +15,10 @@
 - [o] check JWT from frontend to get user id
   - [x] core  JWT token generation and verification
   - [x] provide token on auth request
-  - [ ] refresh token in response header on every request   
-  - [ ] set protected graphql queries and mutations   
+  - [x] refresh token in response header on every request
+  - [ ] process error on wrong signature of token   
+  - [ ] set protected graphql queries and mutations
+  - [ ] check max age of refreshed token
 - [ ] Store portfolio
 - [ ] Display portfolio  
 - [ ]~(optional) store users in strapi

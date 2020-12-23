@@ -3,6 +3,7 @@ const config = require("config")
 // const { ApolloGateway, RemoteGraphQLDataSource, GatewayConfig } = require('@apollo/gateway');
 const {_} = require('lodash');
 const httpHeadersPlugin = require("apollo-server-plugin-http-headers");
+const security = require('./core/security')
 
 const  isProd = false
 
@@ -16,13 +17,17 @@ const server = new ApolloServer({
     schema: gatewaySchema,
     plugins: [httpHeadersPlugin],
     context: ({req}) => {
-            const token = req.headers.authorization || ''
+            const token = security.parseAuthorizationBearer(req)
             return {
                 token,
                 config: config,
-                setHeaders: new Array({ key: "headername", value: "headercontent" })
+                setHeaders:
+                    token ? new Array({
+                            key: "Authorization",
+                            value: security.createAuthorizationBearer(
+                                security.refreshToken(token,config.get("token").secret,config.get("token").expiresIn )
+                            )}):[]
                 }
-
         }
     })
 

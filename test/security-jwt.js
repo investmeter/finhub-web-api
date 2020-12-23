@@ -16,7 +16,7 @@ describe('jwt web client', ()=>{
 
     it("user id from token payload should be the same as initial", function(){
         const payload = security.verifyToken(token, secret)
-        expect(payload).to.have.nested.property('userUuid',userUuid)
+        expect(payload).to.have.nested.property('data.userUuid',userUuid)
         })
 
     it.skip('should expire after 1 second with allowed tolerance', function(done){
@@ -27,6 +27,18 @@ describe('jwt web client', ()=>{
             done()
         }, 7000 )
     })
+
+    it("token should be refreshed with the same payload as original", function(){
+        const oldPayload = security.verifyToken(token, secret)
+
+        const refreshedToken = security.refreshToken(token, secret, 10)
+        const newPayload = security.verifyToken(refreshedToken, secret)
+
+        expect(newPayload).to.have.nested.property('data.userUuid', userUuid)
+        expect(newPayload.exp).to.be.greaterThan(oldPayload.exp)
+
+
+        })
     }
 )
 
