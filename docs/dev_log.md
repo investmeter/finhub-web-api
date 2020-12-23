@@ -14,7 +14,8 @@
      - [X] put in gateway
 - [o] check JWT from frontend to get user id
   - [x] core  JWT token generation and verification
-  - [ ] graphql query to request token
+  - [x] provide token on auth request
+  - [ ] refresh token in response header on every request   
   - [ ] set protected graphql queries and mutations   
 - [ ] Store portfolio
 - [ ] Display portfolio  
