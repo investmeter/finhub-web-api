@@ -19,8 +19,17 @@
   - [ ] process error on wrong signature of token   
   - [ ] set protected graphql queries and mutations
   - [ ] check max age of refreshed token
+  - [ ] implement refersh token 
+
 - [ ] Store portfolio
 - [ ] Display portfolio  
 - [ ]~(optional) store users in strapi
+
+## Tokens
+- [The Ultimate Guide to handling JWTs on frontend clients (GraphQL)](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql)
+- [httpOnly Cookies](https://owasp.org/www-community/HttpOnly)
+
+
+
   
 
