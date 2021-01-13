@@ -16,6 +16,7 @@
   - [x] core  JWT token generation and verification
   - [x] provide token on auth request
   - [x] refresh token in response header on every request
+  - [x] add logging   
   - [ ] process error on wrong signature of token   
   - [ ] set protected graphql queries and mutations
   - [ ] check max age of refreshed token

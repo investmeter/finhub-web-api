@@ -4,6 +4,7 @@ const config = require("config")
 const {_} = require('lodash');
 const httpHeadersPlugin = require("apollo-server-plugin-http-headers");
 const security = require('./core/security')
+const logger = require('./core/logger')
 
 const  isProd = false
 
@@ -32,5 +33,6 @@ const server = new ApolloServer({
     })
 
 server.listen(4000).then(({ url }) => {
-    console.log(`🚀 Server ready at ${url}`)
+    logger.info(`🚀 Server ready at ${url}`)
+    //console.log(`🚀 Server ready at ${url}`)
 })

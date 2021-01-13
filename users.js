@@ -4,7 +4,10 @@ const { v4 } = require('uuid');
 const config = require('config');
 const security = require('./core/security');
 
+const logger=require("./core/logger")
+
 const database = require("./core/database");
+
 
 const typeDefs = `
   type Query {
@@ -69,9 +72,8 @@ const authUser = async ( email, passHash) =>{
         }
     }
     catch (err){
-        console.log(err)
+        logger.warning(`Error ${err}`)
         return undefined
-
     }
 
 }
