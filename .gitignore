@@ -3,6 +3,8 @@ knexfile.js
 # sqlite
 *.sqlite3
 
+.idea
+
 # Logs
 logs
 *.log
