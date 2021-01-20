@@ -17,10 +17,11 @@
   - [x] provide token on auth request
   - [x] refresh token in response header on every request
   - [x] add logging   
-  - [ ] process error on wrong signature of token   
+  - [x] expire token
+  - [ ] process error on wrong signature of token on fronent  
   - [ ] set protected graphql queries and mutations
-  - [ ] check max age of refreshed token
-  - [ ] implement refersh token 
+  - [x] check max age of refreshed token
+  - [x] implement refersh token 
 
 - [ ] Store portfolio
 - [ ] Display portfolio  
