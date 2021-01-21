@@ -18,14 +18,18 @@
   - [x] refresh token in response header on every request
   - [x] add logging   
   - [x] expire token
-  - [ ] process error on wrong signature of token on fronent  
+  - [x] refresh token when refreshed in frontend. refreshToken query
+  - [ ] pass auth header from front-end via apollo's stateful link https://www.apollographql.com/docs/react/api/link/introduction/#stateful-links 
+  - [ ] process error on wrong signature of token on fronend  
   - [ ] set protected graphql queries and mutations
   - [x] check max age of refreshed token
   - [x] implement refersh token 
 
 - [ ] Store portfolio
 - [ ] Display portfolio  
-- [ ]~(optional) store users in strapi
+- [ ] (opt) store users in strapi
+- [ ] (opt) remove providing updated token in gateway response 
+   
 
 ## Tokens
 - [The Ultimate Guide to handling JWTs on frontend clients (GraphQL)](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql)

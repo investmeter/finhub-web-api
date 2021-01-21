@@ -26,15 +26,17 @@ const server = new ApolloServer({
 
         const tokenPayloadUserUuid = _.result(security.verifyToken(token, secret), 'data.userUuid')
 
+        const newToken = tokenPayloadUserUuid ? security.refreshToken(
+            token,config.get("token").secret, config.get("token").expiresIn) : undefined
+
         return {
             token,
+            newToken: newToken,
             config: config,
             setHeaders:
-                tokenPayloadUserUuid ? new Array({
+                newToken ? new Array({
                     key: "Authorization",
-                    value: security.createAuthorizationBearer(
-                        security.refreshToken(token, config.get("token").secret, config.get("token").expiresIn)
-                    )
+                    value: security.createAuthorizationBearer(newToken)
                 }) : []
         }
     }

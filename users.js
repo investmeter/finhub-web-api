@@ -8,13 +8,13 @@ const logger=require("./core/logger")
 
 const database = require("./core/database");
 
-
 const typeDefs = `
   type Query {
     user(email:String): User
     authUser(email:String, passHash:String): User
     users: [User]
     webClientToken(user_uuid:String):String 
+    refreshToken:String
     
   }
   
@@ -33,7 +33,6 @@ const typeDefs = `
     result: String
     
   }
- 
  
 `;
 
@@ -109,6 +108,7 @@ const webClientToken= (userUuid, webClientSecret, exipiersIn = 60*60) => {
     return security.jwtToken(userUuid, {}, webClientSecret, exipiersIn)
 }
 
+
 const resolvers = {
     Query: {
         user(parent, args, context, info) {
@@ -120,6 +120,10 @@ const resolvers = {
         },
         authUser(parent, args, context, info){
             return authUser(args.email, args.passHash)
+        },
+
+        refreshToken(parent, args, context, info){
+            return context.newToken? context.newToken : undefined
         }
     },
     Mutation: {
