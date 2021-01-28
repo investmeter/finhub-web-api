@@ -31,6 +31,7 @@ const server = new ApolloServer({
 
         return {
             token,
+            userUuid: tokenPayloadUserUuid,
             newToken: newToken,
             config: config,
             setHeaders:

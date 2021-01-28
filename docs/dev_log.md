@@ -19,7 +19,10 @@
   - [x] add logging   
   - [x] expire token
   - [x] refresh token when refreshed in frontend. refreshToken query
-  - [ ] pass auth header from front-end via apollo's stateful link https://www.apollographql.com/docs/react/api/link/introduction/#stateful-links 
+  - [x] migrate to single backend for WEB front-end https://dev.to/givehug/next-js-apollo-client-and-server-on-a-single-express-app-55l6 Does not works - because getting session on server side requres NextAuth request context  
+  - [ ] try to set graphql server within next.js api https://www.smashingmagazine.com/2020/10/graphql-server-next-javascript-api-routes/  
+  - [x] create protected grapql request (user's profile)
+  - [ ] pass auth header from front-end via apollo's stateful link https://medium.com/ovrsea/token-authentication-with-react-and-apollo-client-a-detailed-example-a3cc23760e9  https://www.apollographql.com/docs/react/api/link/introduction/#stateful-links 
   - [ ] process error on wrong signature of token on fronend  
   - [ ] set protected graphql queries and mutations
   - [x] check max age of refreshed token
