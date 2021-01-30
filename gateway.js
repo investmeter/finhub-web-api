@@ -20,6 +20,9 @@ const server = new ApolloServer({
     schema: gatewaySchema,
     plugins: [httpHeadersPlugin],
     context: ({req}) => {
+
+        console.log("Request headers: ", req.headers)
+
         const secret = config.get("token").secret
         const expiresIN = config.get("token").expiresIn
         const token = security.parseAuthorizationBearer(req)
