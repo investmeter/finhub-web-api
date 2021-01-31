@@ -13,7 +13,7 @@ const typeDefs = gql(require("../users").typeDefs + require("../fetchers/strapi"
 
 const gatewaySchema = mergeSchemas({
     schemas: [typeDefs],
-    resolvers: [require("../users").resolvers, require("./fetchers/strapi").resolvers]
+    resolvers: [require("../users").resolvers, require("../fetchers/strapi").resolvers]
 })
 
 const server = new ApolloServer({
