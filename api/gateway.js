@@ -52,5 +52,5 @@ const server = new ApolloServer({
 // })
 
 export default server.createHandler({
-    path: '/api/graphql',
+    path: '/api/gateway',
 });
