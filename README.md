@@ -1,20 +1,33 @@
-# Configuration 
+# Configuration
 
-Configuration is managed via https://www.npmjs.com/package/config
-to add production configuration:
-- create file config/production.yaml and override the fields which are needed to be changed 
-- db configuration reflects knex connection structure: 
+```shell
+
+# install knex cli tool 
+npm install knex -g
+
+# create knexfule
+knex init
+```
+
+Edit knex file to smthlike this: 
 ```js
-    const conf = {
-    client: 'postgresql',
+   development: {
+    client: 'sqlite3',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
+      filename: './dev.sqlite3'
     }
-}
-```  
+  },
+...
+```
+ 
+Run migration 
+```shell
+knex migrate:latest --env development 
+```
+
+Run gateway.js after launching strapi
+```shell
+node gateway.js
+```
+
+  
