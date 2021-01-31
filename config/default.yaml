@@ -1,7 +1,7 @@
 # knex db configuration
 ---
 token:
-  expiresIn: 1800
+  expiresIn: 180
   secret: "super secret"
 
 database:
