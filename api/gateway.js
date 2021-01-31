@@ -1,4 +1,4 @@
-const {ApolloServer, gql, mergeSchemas} = require('apollo-server');
+const {ApolloServer, gql, mergeSchemas} = require('apollo-server-micro');
 const config = require("config")
 // const { ApolloGateway, RemoteGraphQLDataSource, GatewayConfig } = require('@apollo/gateway');
 const {_} = require('lodash');
@@ -19,6 +19,7 @@ const gatewaySchema = mergeSchemas({
 const server = new ApolloServer({
     schema: gatewaySchema,
     plugins: [httpHeadersPlugin],
+
     context: ({req}) => {
 
         console.log("Request headers: ", req.headers)
@@ -51,6 +52,6 @@ const server = new ApolloServer({
 //     //console.log(`🚀 Server ready at ${url}`)
 // })
 
-export default server.createHandler({
+module.exports =  server.createHandler({
     path: '/api/gateway',
 });
