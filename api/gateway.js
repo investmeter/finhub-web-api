@@ -1,3 +1,5 @@
+process.env["NODE_CONFIG_DIR"] = "../config/";
+
 const {ApolloServer, gql, mergeSchemas} = require('apollo-server-micro');
 const config = require("config")
 // const { ApolloGateway, RemoteGraphQLDataSource, GatewayConfig } = require('@apollo/gateway');
