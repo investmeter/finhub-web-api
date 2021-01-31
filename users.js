@@ -2,6 +2,9 @@ const { gql } = require('apollo-server');
 
 const { v4 } = require('uuid');
 const config = require('config');
+const security = require('./core/security');
+
+const logger=require("./core/logger")
 
 const database = require("./core/database");
 
@@ -9,7 +12,11 @@ const typeDefs = `
   type Query {
     user(email:String): User
     authUser(email:String, passHash:String): User
+    userProfile(user_uuid:String): UserProfile
     users: [User]
+    webClientToken(user_uuid:String):String 
+    refreshToken:String
+    
   }
   
   type Mutation {
@@ -18,7 +25,15 @@ const typeDefs = `
 
   type User{
     user_uuid: ID!
-    email: String!
+    email: String!,
+    token: String
+   
+  }
+  
+  type UserProfile{
+    user_uuid: ID,
+    email: String,
+    error: String
   }
   
   type RegisterUserResult{
@@ -35,33 +50,18 @@ const db = new database(knexConfig);
 
 // knex = Knex(knexConfig)
 
-let users = [
-    {id:"1",
-    email:"i.averin@gmail.com",
-    passHash:"insect"}
-]
-
-const userCheckAuth = (emailToFind, passHashToFind ) => {
-    return users.find( ({email, passHash}) => {return email === emailToFind && passHash === passHashToFind } )
-}
-
-const fetchUserByEmail= (emailToFind) =>{
-    const user = users.find( ({email}) =>  email === emailToFind )
-    if (user)
-         {
-             return ( {id, email} = user )
-         }
-     return undefined
-}
-
 const authUser = async ( email, passHash) =>{
     try {
-        return await db.authUser(email, passHash)
+        const user = await db.authUser(email, passHash)
+        console.log(user)
+        return {
+            ...user,
+            token: webClientToken(user.user_uuid,config.get('token').secret, config.get('token').expiresIn )
+        }
     }
     catch (err){
-        console.log(err)
+        logger.warning(`Error ${err}`)
         return undefined
-
     }
 
 }
@@ -79,7 +79,7 @@ const authUser = async ( email, passHash) =>{
    return  {
        user: {
            user_uuid:u.user_uuid,
-           email:u.email,
+           email:u.email
        },
        result:"OK"
     }
@@ -93,17 +93,49 @@ const authUser = async ( email, passHash) =>{
    }
 }
 
+const fetchUserProfile  = async (userUuid) =>{
+    try {
+        let user = await db.userProfile(userUuid)
+        return  {
+            ...user,
+            error:undefined
+        }
+
+    }
+    catch (e){
+        return {
+            user: undefined,
+            error: e.toString()
+        }
+    }
+}
+
+
+
+const webClientToken= (userUuid, webClientSecret, exipiersIn = 60*60) => {
+    return security.jwtToken(userUuid, {}, webClientSecret, exipiersIn)
+}
+
+
 const resolvers = {
     Query: {
-        user(parent, args, context, info) {
-            return fetchUserByEmail(args.email)
-        },
 
-        users(parent, args, context, info) {
-            return users
-        },
         authUser(parent, args, context, info){
             return authUser(args.email, args.passHash)
+        },
+
+        refreshToken(parent, args, context, info){
+            return context.newToken? context.newToken : undefined
+        },
+        userProfile(parent, args, context, info) {
+            if (context.userUuid) {
+                return fetchUserProfile(args.user_uuid)
+            } else
+                {
+                    return {
+                        error: "Permission denied"
+                    }
+                }
         }
     },
     Mutation: {

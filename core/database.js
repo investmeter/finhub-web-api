@@ -29,6 +29,20 @@ class MyDatabase extends SQLDataSource {
         // return user
     }
 
+    userProfile(userUuid){
+        return this.knex('users').select().where({user_uuid:userUuid}).then(
+            (result)=>{
+                console.log("Auth OK")
+                console.log("Result ", result)
+                return {
+                    user_uuid:result[0]["user_uuid"],
+                    email: result[0]["email"]
+                }
+            }
+        )
+
+    }
+
 
 }
 
