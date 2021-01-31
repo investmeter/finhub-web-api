@@ -1,0 +1,13 @@
+# knex db configuration
+---
+token:
+  expiresIn: 180
+  secret: "super secret"
+
+database:
+  client: sqlite3
+  connection:
+    filename: ./dev.sqlite3
+
+strapi:
+  graphql_endpoint: http://localhost:1337/graphql
