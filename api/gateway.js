@@ -8,7 +8,7 @@ const logger = require('../core/logger')
 
 const isProd = false
 
-const typeDefs = gql(require("./users").typeDefs + require("./fetchers/strapi").typeDefs)
+const typeDefs = gql(require("../users").typeDefs + require("../fetchers/strapi").typeDefs)
 //const resolvers = _.merge(require("./users").resolvers, require("./fetchers/strapi").resolvers)
 
 const gatewaySchema = mergeSchemas({
