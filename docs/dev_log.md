@@ -23,13 +23,14 @@
   - [ ] try to set graphql server within next.js api https://www.smashingmagazine.com/2020/10/graphql-server-next-javascript-api-routes/  
   - [x] create protected grapql request (user's profile)
   - [x] pass auth header from front-end via apollo's stateful link https://www.apollographql.com/docs/react/api/link/introduction/#stateful-links 
-  - [ ] set Auth error on server and process it on fronend https://www.apollographql.com/docs/apollo-server/data/errors/   
-  - [ ] set protected graphql queries and mutations
+  - [x] set Auth error on server and process it on fronend https://www.apollographql.com/docs/apollo-server/data/errors/   
+  - [x] set protected graphql queries and mutations
   - [x] check max age of refreshed token
   - [x] implement refersh token 
 
 - [ ] Store portfolio
-- [ ] Display portfolio  
+- [ ] Display portfolio
+- [ ] Consider hasura as a gateway  
 - [ ] (opt) store users in strapi
 - [ ] (opt) remove providing updated token in gateway response 
    
