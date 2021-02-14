@@ -30,8 +30,12 @@
 
 - [ ] Store portfolio
   - [ ] Add instrument in portfolio:
-     - [ ] Front End 
-     - [ ] Back End
+     - [ ] Front End:
+       
+       With react-bootstrap-date-picker https://www.npmjs.com/package/react-bootstrap-date-picker
+      
+    - [ ] Back End
+ 
   
 - [ ] Display portfolio
 - [ ] Consider hasura as a gateway  
