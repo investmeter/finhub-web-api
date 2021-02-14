@@ -8,12 +8,12 @@ const logger = require('./core/logger')
 
 const isProd = false
 
-const typeDefs = gql(require("./users").typeDefs + require("./fetchers/strapi").typeDefs)
+const typeDefs = gql(require("./users").typeDefs + require("./fetchers/securities").typeDefs)
 //const resolvers = _.merge(require("./users").resolvers, require("./fetchers/strapi").resolvers)
 
 const gatewaySchema = mergeSchemas({
     schemas: [typeDefs],
-    resolvers: [require("./users").resolvers, require("./fetchers/strapi").resolvers]
+    resolvers: [require("./users").resolvers, require("./fetchers/securities").resolvers]
 })
 
 const server = new ApolloServer({
