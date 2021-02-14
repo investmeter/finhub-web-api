@@ -32,7 +32,11 @@
   - [ ] Add instrument in portfolio:
      - [ ] Front End:
        
-       With react-bootstrap-date-picker https://www.npmjs.com/package/react-bootstrap-date-picker
+       - Date picker https://reactdatepicker.com/
+       - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller  
+   
+
+  
       
     - [ ] Back End
  
