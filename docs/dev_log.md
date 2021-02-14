@@ -29,6 +29,10 @@
   - [x] implement refersh token 
 
 - [ ] Store portfolio
+  - [ ] Add instrument in portfolio:
+     - [ ] Front End 
+     - [ ] Back End
+  
 - [ ] Display portfolio
 - [ ] Consider hasura as a gateway  
 - [ ] (opt) store users in strapi
