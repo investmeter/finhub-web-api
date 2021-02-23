@@ -12,7 +12,7 @@ const typeDefs = `
      type Deal {
         id: ID
         timestamp: Int
-        deal_timestamp: Int
+        deal_timestamp: String
         type: ENUM_SECURITY_TYPE
         user_uuid: String
         security_id: Int
@@ -28,7 +28,7 @@ const typeDefs = `
     input DealInput {
         
         timestamp: Int
-        deal_timestamp: Int
+        deal_timestamp: String
         type: ENUM_SECURITY_TYPE
         user_uuid: String
         security_id: Int
