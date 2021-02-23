@@ -31,17 +31,17 @@ Fields:
 
 List of buying/selling operation for user
 
-
+table: user_deals
 
 Fields: 
 
 - timestamp
 
-- broker
+- deal_timestamp
 
-- user_uuid
+- user_id
 
-- asset_uuid
+- security_id
 
 - operation: buy, sell
 
@@ -50,6 +50,12 @@ Fields:
 - price
 
 - currency
+
+- fee
+
+- fee_currency
+
+- comment
 
 - payload {}
 

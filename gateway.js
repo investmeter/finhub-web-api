@@ -8,13 +8,18 @@ const logger = require('./core/logger')
 
 const isProd = false
 
-const typeDefs = gql(require("./users").typeDefs + require("./fetchers/securities").typeDefs)
+const typeDefs = gql(require("./users").typeDefs +
+  require("./fetchers/securities").typeDefs +
+  require("./fetchers/portfolio").typeDefs)
+
 //const resolvers = _.merge(require("./users").resolvers, require("./fetchers/strapi").resolvers)
 
 const gatewaySchema = mergeSchemas({
     schemas: [typeDefs],
-    resolvers: [require("./users").resolvers, require("./fetchers/securities").resolvers]
-})
+    resolvers: [require("./users").resolvers,
+        require("./fetchers/securities").resolvers,
+        require("./fetchers/portfolio").resolvers]
+    })
 
 const server = new ApolloServer({
     schema: gatewaySchema,
@@ -22,6 +27,7 @@ const server = new ApolloServer({
     context: ({req}) => {
 
         console.log("Request headers: ", req.headers)
+        console.log("Request body: ", req.body)
 
         const secret = config.get("token").secret
         const expiresIN = config.get("token").expiresIn
