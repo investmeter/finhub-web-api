@@ -83,8 +83,8 @@ const addDeal = async (args, context) =>  {
   }
   return db.knex('user_deals').insert(deal, 'id').then(
     (result)=>{
-      console.log("Result ", result.rows)
-      return result.rows
+      console.log("Result ", result)
+      return result
     }
   ).catch((e) => {
     console.log('Error adding deal')
