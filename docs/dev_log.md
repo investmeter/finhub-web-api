@@ -28,20 +28,17 @@
   - [x] check max age of refreshed token
   - [x] implement refersh token 
 
-- [ ] Store portfolio
-  - [ ] Add instrument in portfolio:
-     - [ ] Front End:
-       
+- [X] Portfolio
+  - [X] Add instrument in portfolio:
+     
        - Date picker https://reactdatepicker.com/
-       - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller  
-   
-
-  
-      
-    - [ ] Back End
+       - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
+  - [ ] List of added assets
+    - [ ]  /porfolio should display the list of added items
+    - [ ]  move add instrument to portfolio/add
+  - [ ] Edit entry 
  
-  
-- [ ] Display portfolio
+- [ ] Dashboard    
 - [ ] Consider hasura as a gateway  
 - [ ] (opt) store users in strapi
 - [ ] (opt) remove providing updated token in gateway response 
