@@ -42,7 +42,6 @@ const typeDefs = `
     }
     
     type DealResult{
-      Deal: Deal
       result: String
   }
 
@@ -62,8 +61,8 @@ const addDeal = async (args, context) =>  {
   if (!context.userUuid) {
     console.error("No userUuid in token")
     return {
-        result: 'error',
-        Deal: undefined
+        result: 'UNAUTHENTICATED',
+        id: undefined
     }
   }
 
@@ -81,14 +80,19 @@ const addDeal = async (args, context) =>  {
     payload: _.get(args,'input.payload'),
     comment: _.get(args, 'input.comment')
   }
-  return db.knex('user_deals').insert(deal, 'id').then(
+  return db.knex('user_deals').insert(deal, ['id']).then(
     (result)=>{
       console.log("Result ", result)
-      return result
+      return {
+        result:'ok',
+      }
     }
   ).catch((e) => {
     console.log('Error adding deal')
     console.log(e)
+    return {
+      result:'ERROR_ADDING_DEAL'
+    }
   })
 
 }
