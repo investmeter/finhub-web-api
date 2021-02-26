@@ -75,7 +75,7 @@ const fetchSecurities = async (args, strapiConfig) =>  {
 const resolvers = {
   Query: {
     securities(parent, args, context, info) {
-      return fetchSecurities(args, context.config.get("strapi"))
+      return fetchSecurities(args)
     }
   },
   JSON: GraphQLJSON
