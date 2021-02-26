@@ -34,6 +34,7 @@ const typeDefs = `
         security_id: Int
         amount: Float
         price: Float
+        totalPaid: Float
         currency: String
         fee: Float
         fee_currency: String
@@ -74,6 +75,7 @@ const addDeal = async (args, context) =>  {
     security_id: _.get(args,'input.security_id'),
     amount: _.get(args,'input.amount'),
     price: _.get(args,'input.price'),
+    total_paid:_.get(args,'input.totalPaid'),
     currency: _.get(args, 'input.currency'),
     fee: _.get(args,'input.fee'),
     fee_currency: _.get(args,'input.fee_currency'),
