@@ -14,7 +14,7 @@ exports.up = function(knex) {
       table.decimal('price', null).notNullable()
       table.decimal('total_paid', null).notNullable()
       table.string('currency').notNullable()
-      table.float('fee')
+      table.decimal('fee', null)
       table.string('fee_currency')
       table.json('payload')
       table.text('comment')
