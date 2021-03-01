@@ -24,6 +24,7 @@ const typeDefs = `
       type: ENUM_SECURITY_TYPE
       provider_info: JSON
       published_at: DateTime
+      currency: String
       # icon(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
     }
     
@@ -53,12 +54,12 @@ const fetchSecurities = async (args, strapiConfig) =>  {
       return result.concat(i>0?',':'').concat(`'%${current}%'`)
     }, '')
 
-   sql = `select s.id, s.type, s.ticker, s.title, s.provider_info
+   sql = `select s.id, s.type, s.ticker, s.currency, s.title, s.provider_info
    from securities s where ticker ilike any(array[${searchParams}]) or 
    title ilike any(array[${searchParams}])`
   }
   else{
-     sql = `select s.id, s.type, s.ticker, s.title, s.provider_info
+     sql = `select s.id, s.type, s.ticker,s.currency, s.title, s.provider_info
    from securities as s limit ${limit}`
   }
 
@@ -74,7 +75,7 @@ const fetchSecurities = async (args, strapiConfig) =>  {
 const resolvers = {
   Query: {
     securities(parent, args, context, info) {
-      return fetchSecurities(args, context.config.get("strapi"))
+      return fetchSecurities(args)
     }
   },
   JSON: GraphQLJSON
