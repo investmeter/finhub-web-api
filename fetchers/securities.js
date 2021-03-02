@@ -5,7 +5,7 @@ const logger = require("../core/logger")
 const database = require("../core/database")
 const GraphQLJSON = require("graphql-type-json");
 
-const typeDefs = `
+const typeDefs = gql`
      scalar JSON
      scalar DateTime
         

@@ -6,8 +6,18 @@ const database = require("../core/database")
 const GraphQLJSON = require("graphql-type-json");
 const _ = require('lodash')
 
-const typeDefs = `
-
+const typeDefs = gql`
+    
+    type PortfolioItem {
+        asset:Security
+        last_deal_timestamp: String
+        amount: Int
+        current_value:Float
+    }
+    
+    type Portfolio {
+      assets: [PortfolioItem]
+    }
      
      type Deal {
         id: ID
@@ -49,6 +59,10 @@ const typeDefs = `
      type Mutation {
        addDeal(input: DealInput ): DealResult
   }
+     
+     type Query {
+        getUserPortfolio: [PortfolioItem]
+     }
 
 `
 

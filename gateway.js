@@ -1,4 +1,4 @@
-const {ApolloServer, gql, mergeSchemas} = require('apollo-server');
+const {ApolloServer, gql, mergeSchemas, makeExecutableSchema} = require('apollo-server');
 const config = require("config")
 // const { ApolloGateway, RemoteGraphQLDataSource, GatewayConfig } = require('@apollo/gateway');
 const {_} = require('lodash');
@@ -8,14 +8,18 @@ const logger = require('./core/logger')
 
 const isProd = false
 
-const typeDefs = gql(require("./users").typeDefs +
-  require("./fetchers/securities").typeDefs +
-  require("./fetchers/portfolio").typeDefs)
+// const typeDefs = gql(require("./users").typeDefs +
+//   require("./fetchers/securities").typeDefs +
+//   require("./fetchers/portfolio").typeDefs)
+
+const schemas = [(require("./users").typeDefs),
+    (require("./fetchers/securities").typeDefs),
+    (require("./fetchers/portfolio").typeDefs)]
 
 //const resolvers = _.merge(require("./users").resolvers, require("./fetchers/strapi").resolvers)
 
 const gatewaySchema = mergeSchemas({
-    schemas: [typeDefs],
+    schemas: schemas,
     resolvers: [require("./users").resolvers,
         require("./fetchers/securities").resolvers,
         require("./fetchers/portfolio").resolvers]

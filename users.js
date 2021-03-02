@@ -8,7 +8,7 @@ const logger=require("./core/logger")
 
 const database = require("./core/database");
 
-const typeDefs = `
+const typeDefs = gql`
   type Query {
     user(email:String): User
     authUser(email:String, passHash:String): User
