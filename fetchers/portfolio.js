@@ -110,12 +110,11 @@ const addDeal = async (args, context) => {
     })
 }
 
-const userPortfolio = async (userUuid, context) => {
-  if (context.userUuid !== userUuid) {
+const userPortfolio = async (userUuid) => {
+  if (!userUuid) {
     console.error('No userUuid in token')
     return {
-      result: 'UNAUTHENTICATED',
-      id: undefined,
+      result: 'UNAUTHENTICATED'
     }
   }
 
@@ -157,7 +156,7 @@ const resolvers = {
   },
   Query: {
     userPortfolio(parent, args, context) {
-      return userPortfolio(args.user_uuid, context)
+      return userPortfolio(context.userUuid)
     },
   },
 
