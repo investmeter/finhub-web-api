@@ -7,6 +7,18 @@ const GraphQLJSON = require('graphql-type-json')
 const _ = require('lodash')
 
 const typeDefs = gql`
+  
+    type Security {
+      id: ID!
+      title: String
+      ticker: String
+      type: ENUM_SECURITY_TYPE
+      provider_info: JSON
+      published_at: DateTime
+      currency: String
+      # icon(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
+    }
+
   type PortfolioItem {
     asset: Security
     last_deal_timestamp: String
@@ -24,7 +36,7 @@ const typeDefs = gql`
     deal_timestamp: String
     type: ENUM_SECURITY_TYPE
     user_uuid: String
-    security_id: Int
+    asset: Security
     amount: Float
     price: Float
     currency: String
@@ -60,6 +72,7 @@ const typeDefs = gql`
 
   type Query {
     userPortfolio(user_uuid: String): [PortfolioItem]
+    userDeals(user_uuid:String, security_id: Int ):[Deal]
   }
 `
 
@@ -147,6 +160,45 @@ const userPortfolio = async (userUuid) => {
     })
 }
 
+async function userDeals(userUuid, securityId){
+
+    if (!userUuid) {
+      console.error('No userUuid in token')
+      return {
+        result: 'UNAUTHENTICATED'
+      }
+    }
+
+    return db.knex
+      .raw(
+        `select ud.id, ud.deal_timestamp, ud.security_id, ud.amount, ud.price, ud.total_paid , ud.fee,
+            s2.type, 
+            s2.ticker,
+            s2.title, 
+            s2.currency
+            from user_deals ud
+            left join securities s2 on s2.id = ud.security_id
+            where user_uuid=:user_uuid ${securityId?" and ud.security_id =:security_id":""} 
+        order by deal_timestamp desc`
+    , {'user_uuid':userUuid, 'security_id':securityId})
+      .then((result) => {
+        const r = result.rows.map((item) => {
+          return {
+            ...item,
+            deal_timestamp: item.deal_timestamp.toString(),
+            asset: {
+              id: item.security_id,
+              title: item.title,
+              ticker: item.ticker,
+              currency: item.currency,
+            },
+          }
+        })
+        return r
+      })
+
+}
+
 const resolvers = {
   Mutation: {
     addDeal(parent, args, context, info) {
@@ -157,6 +209,9 @@ const resolvers = {
     userPortfolio(parent, args, context) {
       return userPortfolio(context.userUuid)
     },
+    userDeals(parent, args, context) {
+      return userDeals(context.userUuid, args.security_id)
+    }
   },
 
   // PortfolioItem: {
