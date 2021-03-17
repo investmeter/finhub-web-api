@@ -122,13 +122,12 @@ const userPortfolio = async (userUuid) => {
     .raw(
       `select s.id, s.title, s.ticker, s.currency, 
         max(ud.deal_timestamp) as "last_deal_timestamp",
-         sum(ud.amount) as "amount" from user_deals ud
-
-    left join securities s on ud.security_id = s.id
-
-    where ud.user_uuid = '${userUuid}'
-    group by  s.id, s.title, s.ticker
-    order by last_deal_timestamp desc`
+        sum(ud.amount) as "amount" from user_deals ud
+        left join securities s on ud.security_id = s.id
+        where ud.user_uuid = :user_uuid
+        group by  s.id, s.title, s.ticker
+        order by last_deal_timestamp desc`,
+      {user_uuid: userUuid}
     )
     .then((result) => {
       const r = result.rows.map((item) => {
