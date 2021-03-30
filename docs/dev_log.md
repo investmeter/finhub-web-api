@@ -33,9 +33,13 @@
      
        - Date picker https://reactdatepicker.com/
        - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
-  - [ ] List of added assets
-    - [ ]  /porfolio should display the list of added items
-    - [ ]  move add instrument to portfolio/add
+  - [x] List of added assets
+    - [x]  /portfolio should display the list of added items
+    - [ ]  /portfolio/deals/[ticker].js should display the list of deals for ticker
+    - [ ]  add/delete/modify single deal from /ticker page
+
+  - [ ] calc portfolio current value  
+    
   - [ ] Edit entry 
  
 - [ ] Dashboard    
