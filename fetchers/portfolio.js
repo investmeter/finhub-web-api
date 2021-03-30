@@ -19,15 +19,16 @@ const typeDefs = gql`
       # icon(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
     }
 
-  type PortfolioItem {
+  type PortfolioAsset {
     asset: Security
     last_deal_timestamp: String
     amount: Int
     current_value: Float
   }
-
-  type Portfolio {
-    assets: [PortfolioItem]
+  
+  type PortfolioAssetResponse{
+    error: String
+    portfolioAssets: [PortfolioAsset]
   }
 
   type Deal {
@@ -62,31 +63,37 @@ const typeDefs = gql`
     comment: String
   }
 
-  type DealResult {
-    result: String
+  type DealResponse {
+    error: JSON
+    deals: [Deal]
   }
 
   type Mutation {
-    addDeal(input: DealInput): DealResult
+    addDeal(input: DealInput): DealResponse
   }
 
   type Query {
-    userPortfolio(user_uuid: String): [PortfolioItem]
-    userDeals(user_uuid:String, security_id: Int ):[Deal]
+    userPortfolio(user_uuid: String): PortfolioAssetResponse
+    userDeals(user_uuid:String, security_id: Int ):DealResponse
   }
 `
 
 const knexConfig = config.get('database')
 const db = new database(knexConfig)
-
+/**
+ *
+ * @param args
+ * @param context
+ * @return {Promise<{error: string, deals: []}>}
+ */
 const addDeal = async (args, context) => {
   // const limit = args.limit || 0
   // const search = args.search || ""
   if (!context.userUuid) {
     console.error('No userUuid in token')
     return {
-      result: 'UNAUTHENTICATED',
-      id: undefined,
+      error: 'UNAUTHENTICATED',
+      deals: [],
     }
   }
 
@@ -111,23 +118,31 @@ const addDeal = async (args, context) => {
     .then((result) => {
       console.log('Result ', result)
       return {
-        result: 'ok',
+        error: '',
+        deals: [deal]
       }
     })
     .catch((e) => {
       console.log('Error adding deal')
       console.log(e)
       return {
-        result: 'ERROR_ADDING_DEAL',
+        error: 'ERROR_ADDING_DEAL',
+        deals: []
       }
     })
 }
-
+/**
+ *
+ * @param userUuid
+ * @return {Promise<{portfolioAssets: [], error: string}|*>}
+ */
 const userPortfolio = async (userUuid) => {
+
   if (!userUuid) {
     console.error('No userUuid in token')
     return {
-      result: 'UNAUTHENTICATED'
+      error: 'UNAUTHENTICATED',
+      portfolioAssets:[]
     }
   }
 
@@ -156,7 +171,10 @@ const userPortfolio = async (userUuid) => {
           current_value: 0.0,
         }
       })
-      return r
+      return {
+        error:"",
+        portfolioAssets:r
+      }
     })
 }
 
@@ -165,7 +183,8 @@ async function userDeals(userUuid, securityId){
     if (!userUuid) {
       console.error('No userUuid in token')
       return {
-        result: 'UNAUTHENTICATED'
+        error: 'UNAUTHENTICATED',
+        deals: []
       }
     }
 
@@ -178,7 +197,7 @@ async function userDeals(userUuid, securityId){
             s2.currency
             from user_deals ud
             left join securities s2 on s2.id = ud.security_id
-            where user_uuid=:user_uuid ${securityId?" and ud.security_id =:security_id":""} 
+            where user_uuid=:user_uuid and ud.security_id =:security_id 
         order by deal_timestamp desc`
     , {'user_uuid':userUuid, 'security_id':securityId})
       .then((result) => {
@@ -194,7 +213,10 @@ async function userDeals(userUuid, securityId){
             },
           }
         })
-        return r
+        return ({
+          error:"",
+          deals: r
+        })
       })
 
 }
@@ -210,7 +232,14 @@ const resolvers = {
       return userPortfolio(context.userUuid)
     },
     userDeals(parent, args, context) {
-      return userDeals(context.userUuid, args.security_id)
+      if (args.user_uuid === context.userUuid)
+        return userDeals(context.userUuid, args.security_id)
+
+      return {
+        error: 'UNAUTHENTICATED',
+        deals: []
+      }
+
     }
   },
 
