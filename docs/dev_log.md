@@ -35,7 +35,7 @@
        - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
   - [x] List of added assets
     - [x]  /portfolio should display the list of added items
-    - [ ]  /portfolio/deals/[ticker].js should display the list of deals for ticker
+    - [ ]  /portfolio/deals/index.js should display the list of deals with the ticker filter and date range filter
     - [ ]  add/delete/modify single deal from /ticker page
 
   - [ ] calc portfolio current value  
