@@ -39,6 +39,7 @@ const typeDefs = gql`
     asset: Security
     amount: Float
     price: Float
+    total_paid: Float
     currency: String
     fee: Float
     fee_currency: String
