@@ -7,17 +7,16 @@ const GraphQLJSON = require('graphql-type-json')
 const _ = require('lodash')
 
 const typeDefs = gql`
-  
-    type Security {
-      id: ID!
-      title: String
-      ticker: String
-      type: ENUM_SECURITY_TYPE
-      provider_info: JSON
-      published_at: DateTime
-      currency: String
-      # icon(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
-    }
+  type Security {
+    id: ID!
+    title: String
+    ticker: String
+    type: ENUM_SECURITY_TYPE
+    provider_info: JSON
+    published_at: DateTime
+    currency: String
+    # icon(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
+  }
 
   type PortfolioAsset {
     asset: Security
@@ -25,8 +24,8 @@ const typeDefs = gql`
     amount: Int
     current_value: Float
   }
-  
-  type PortfolioAssetResponse{
+
+  type PortfolioAssetResponse {
     error: String
     portfolioAssets: [PortfolioAsset]
   }
@@ -74,7 +73,7 @@ const typeDefs = gql`
 
   type Query {
     userPortfolio(user_uuid: String): PortfolioAssetResponse
-    userDeals(user_uuid:String, security_id: Int ):DealResponse
+    userDeals(user_uuid: String, security_id: Int): DealResponse
   }
 `
 
@@ -119,7 +118,7 @@ const addDeal = async (args, context) => {
       console.log('Result ', result)
       return {
         error: '',
-        deals: [deal]
+        deals: [deal],
       }
     })
     .catch((e) => {
@@ -127,7 +126,7 @@ const addDeal = async (args, context) => {
       console.log(e)
       return {
         error: 'ERROR_ADDING_DEAL',
-        deals: []
+        deals: [],
       }
     })
 }
@@ -137,12 +136,11 @@ const addDeal = async (args, context) => {
  * @return {Promise<{portfolioAssets: [], error: string}|*>}
  */
 const userPortfolio = async (userUuid) => {
-
   if (!userUuid) {
     console.error('No userUuid in token')
     return {
       error: 'UNAUTHENTICATED',
-      portfolioAssets:[]
+      portfolioAssets: [],
     }
   }
 
@@ -155,7 +153,7 @@ const userPortfolio = async (userUuid) => {
         where ud.user_uuid = :user_uuid
         group by  s.id, s.title, s.ticker
         order by last_deal_timestamp desc`,
-      {user_uuid: userUuid}
+      { user_uuid: userUuid }
     )
     .then((result) => {
       const r = result.rows.map((item) => {
@@ -172,25 +170,26 @@ const userPortfolio = async (userUuid) => {
         }
       })
       return {
-        error:"",
-        portfolioAssets:r
+        error: '',
+        portfolioAssets: r,
       }
     })
 }
 
-async function userDeals(userUuid, securityId){
-
-    if (!userUuid) {
-      console.error('No userUuid in token')
-      return {
-        error: 'UNAUTHENTICATED',
-        deals: []
-      }
+async function userDeals(userUuid, securityId) {
+  if (!userUuid) {
+    console.error('No userUuid in token')
+    return {
+      error: 'UNAUTHENTICATED',
+      deals: [],
     }
+  }
 
-    return db.knex
-      .raw(
-        `select ud.id, ud.deal_timestamp, ud.security_id, ud.amount, ud.price, ud.total_paid , ud.fee,
+  const req = securityId?
+     `select ud.id, ud.deal_timestamp, ud.security_id,
+            ud.amount,
+            ud.price,
+            ud.total_paid , ud.fee,
             s2.type, 
             s2.ticker,
             s2.title, 
@@ -199,26 +198,34 @@ async function userDeals(userUuid, securityId){
             left join securities s2 on s2.id = ud.security_id
             where user_uuid=:user_uuid and ud.security_id =:security_id 
         order by deal_timestamp desc`
-    , {'user_uuid':userUuid, 'security_id':securityId})
-      .then((result) => {
-        const r = result.rows.map((item) => {
-          return {
-            ...item,
-            deal_timestamp: item.deal_timestamp.toString(),
-            asset: {
-              id: item.security_id,
-              title: item.title,
-              ticker: item.ticker,
-              currency: item.currency,
-            },
-          }
-        })
-        return ({
-          error:"",
-          deals: r
-        })
-      })
+    : `select ud.id, ud.deal_timestamp, ud.security_id, ud.amount, ud.price, ud.total_paid , ud.fee,
+            s2.type, 
+            s2.ticker,
+            s2.title, 
+            s2.currency
+            from user_deals ud
+            left join securities s2 on s2.id = ud.security_id
+            where user_uuid=:user_uuid 
+        order by deal_timestamp desc`
 
+  return db.knex.raw(req, { user_uuid: userUuid, security_id: securityId }).then((result) => {
+    const r = result.rows.map((item) => {
+      return {
+        ...item,
+        deal_timestamp: item.deal_timestamp.toString(),
+        asset: {
+          id: item.security_id,
+          title: item.title,
+          ticker: item.ticker,
+          currency: item.currency,
+        },
+      }
+    })
+    return {
+      error: '',
+      deals: r,
+    }
+  })
 }
 
 const resolvers = {
@@ -232,15 +239,13 @@ const resolvers = {
       return userPortfolio(context.userUuid)
     },
     userDeals(parent, args, context) {
-      if (args.user_uuid === context.userUuid)
-        return userDeals(context.userUuid, args.security_id)
+      if (args.user_uuid === context.userUuid) return userDeals(context.userUuid, args.security_id)
 
       return {
         error: 'UNAUTHENTICATED',
-        deals: []
+        deals: [],
       }
-
-    }
+    },
   },
 
   // PortfolioItem: {
@@ -253,8 +258,7 @@ const resolvers = {
   JSON: GraphQLJSON,
 }
 
-
 module.exports = {
   typeDefs: typeDefs,
-  resolvers: resolvers
-};
+  resolvers: resolvers,
+}
