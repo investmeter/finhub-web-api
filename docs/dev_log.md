@@ -30,20 +30,23 @@
 
 - [X] Portfolio
   - [X] Add instrument in portfolio:
-     
        - Date picker https://reactdatepicker.com/
        - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
   - [x] List of added assets
     - [x]  /portfolio should display the list of added items
     - [x]  /portfolio/deals/index.js should display the list of deals with the ticker filter
           - [ ] and date range filter
-    - [ ]  delete/modify single deal from /ticker page
-
-  - [ ] calc portfolio current value  
-    
-  - [ ] Edit entry 
+    - [ ] delete/modify single deal from /deal page
+    - [ ] Several Portfolios in account
+      - [ ] Create / Edit / Archive
+    - [ ] Release and Deploy  
+  - [ ] Calc portfolio current value  
  
-- [ ] Dashboard    
+- [ ] Dashboards 
+    - [ ] Single Portfolio Dashboard
+    - [ ] Compare Portfolios
+  
+- [ ] Fix frontend to be smooth and nice 
 - [ ] Consider hasura as a gateway  
 - [ ] (opt) store users in strapi
 - [ ] (opt) remove providing updated token in gateway response 
