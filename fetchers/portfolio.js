@@ -45,6 +45,7 @@ const typeDefs = gql`
     fee_currency: String
     payload: JSON
     comment: String
+    status: String
   }
 
   input DealInput {
@@ -70,14 +71,14 @@ const typeDefs = gql`
 
   type Mutation {
     addDeal(input: DealInput): DealResponse
+    """
+    Delete (archive) deal from portfolio. Deal record will stay in db with status 'DELETED' 
+    """
+    deleteDeal(deal_id:Int): DealResponse
   }
 
   type Query {
     userPortfolio(user_uuid: String): PortfolioAssetResponse
-    
-    """
-    Provides active user deals (not deleted) 
-    """    
     userDeals(user_uuid: String, security_id: Int): DealResponse
   }
 `
@@ -233,11 +234,53 @@ async function userDeals(userUuid, securityId) {
   })
 }
 
+function deleteDeal(userUuid, dealId) {
+
+  const req = `
+  UPDATE user_deals ud SET status='DELETED' 
+  where ud.id=:deal_id and ud.user_uuid = :user_uuid and ud.status = 'ACTIVE'  
+  `
+
+  return db.knex.raw(req, { user_uuid: userUuid, deal_id: dealId }).then((result) => {
+    console.log(result)
+
+    if (result.rowCount === 1) {
+      return {
+        error: "",
+        deals: [{
+          id: dealId,
+          status: "DELETED"
+        }]
+      };
+    } else {
+      return {
+        error: "DEAL_NOT_FOUND",
+        deals: []
+      }
+    }
+  }).catch((e) => {
+    console.log(e)
+    return {
+      error: "ERROR",
+      deals:[]
+    }
+  })
+}
+
 const resolvers = {
   Mutation: {
     addDeal(parent, args, context, info) {
       return addDeal(args, context)
     },
+    deleteDeal(parent, args, context){
+      if (!context.userUuid) {
+        return {
+          error: 'UNAUTHENTICATED',
+          deals: [],
+        }
+      }
+      return deleteDeal(context.userUuid, args.deal_id)
+    }
   },
   Query: {
     userPortfolio(parent, args, context) {
@@ -251,6 +294,7 @@ const resolvers = {
         deals: [],
       }
     },
+
   },
 
   // PortfolioItem: {
