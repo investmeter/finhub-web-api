@@ -36,7 +36,15 @@
     - [x]  /portfolio should display the list of added items
     - [x]  /portfolio/deals/index.js should display the list of deals with the ticker filter
           - [ ] and date range filter
-    - [ ] delete single deal from /deals page 
+    - [o] delete single deal from /deals page
+        - [X] show modal with delete confirmation
+        - [ ] display loading state until mutation complete
+        - [X] make dealDelete mutation and display the result
+        - [ ] update deals list 
+        - [ ] display message if there is no deals for ticker
+          - [ ] return ticker information in deals for ticker request in order to display ticker on deals page
+                when there is no deals for ticker 
+      
     - [ ] add deal from /deals page 
     - [ ] Several Portfolios in account
       - [ ] Create / Edit / Archive
