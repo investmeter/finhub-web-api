@@ -36,7 +36,8 @@
     - [x]  /portfolio should display the list of added items
     - [x]  /portfolio/deals/index.js should display the list of deals with the ticker filter
           - [ ] and date range filter
-    - [ ] delete/modify single deal from /deal page
+    - [ ] delete single deal from /deals page 
+    - [ ] add deal from /deals page 
     - [ ] Several Portfolios in account
       - [ ] Create / Edit / Archive
     - [ ] Release and Deploy  
