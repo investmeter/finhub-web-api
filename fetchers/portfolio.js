@@ -74,6 +74,10 @@ const typeDefs = gql`
 
   type Query {
     userPortfolio(user_uuid: String): PortfolioAssetResponse
+    
+    """
+    Provides active user deals (not deleted) 
+    """    
     userDeals(user_uuid: String, security_id: Int): DealResponse
   }
 `
@@ -151,7 +155,7 @@ const userPortfolio = async (userUuid) => {
         max(ud.deal_timestamp) as "last_deal_timestamp",
         sum(ud.amount) as "amount" from user_deals ud
         left join securities s on ud.security_id = s.id
-        where ud.user_uuid = :user_uuid
+        where ud.user_uuid = :user_uuid and ud.status = 'ACTIVE' 
         group by  s.id, s.title, s.ticker
         order by last_deal_timestamp desc`,
       { user_uuid: userUuid }
@@ -197,7 +201,7 @@ async function userDeals(userUuid, securityId) {
             s2.currency
             from user_deals ud
             left join securities s2 on s2.id = ud.security_id
-            where user_uuid=:user_uuid and ud.security_id =:security_id 
+            where user_uuid=:user_uuid and ud.security_id =:security_id and status = 'ACTIVE'
         order by deal_timestamp desc`
     : `select ud.id, ud.deal_timestamp, ud.security_id, ud.amount, ud.price, ud.total_paid , ud.fee,
             s2.type, 
@@ -206,7 +210,7 @@ async function userDeals(userUuid, securityId) {
             s2.currency
             from user_deals ud
             left join securities s2 on s2.id = ud.security_id
-            where user_uuid=:user_uuid 
+            where user_uuid=:user_uuid and ud.status = 'ACTIVE' 
         order by deal_timestamp desc`
 
   return db.knex.raw(req, { user_uuid: userUuid, security_id: securityId }).then((result) => {
