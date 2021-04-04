@@ -68,13 +68,42 @@ const typeDefs = gql`
     error: JSON
     deals: [Deal]
   }
-
+  
+  type UserPortfolio {
+    id: Int
+    timestamp_created: String
+    status: String
+    user_uuid: String
+    title:String
+    description: String
+    display_options: JSON
+  }
+  
+  input UserPortfolioInput{
+    timestamp_created: String
+    status: String
+    user_uuid: String
+    title:String
+    description: String
+    display_options: JSON
+  } 
+  
+  type UserPortfolioResponse{
+    error: String
+    userPortfolio: [UserPortfolio]  
+  }  
+  
   type Mutation {
     addDeal(input: DealInput): DealResponse
     """
     Delete (archive) deal from portfolio. Deal record will stay in db with status 'DELETED' 
     """
     deleteDeal(deal_id:Int): DealResponse
+    
+    """
+    Create user's portfolio
+    """
+    addUserPortfolio(user_portfolio:UserPortfolioInput):UserPortfolioResponse
   }
 
   type Query {
