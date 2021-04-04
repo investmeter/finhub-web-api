@@ -29,7 +29,7 @@
   - [x] implement refersh token 
 
 - [X] Portfolio
-  - [ ] Basic Management  
+  - [x] Basic Management  
     - [X] Add instrument in portfolio:
          - Date picker https://reactdatepicker.com/
          - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
@@ -37,7 +37,7 @@
       - [x]  /portfolio should display the list of added items
       - [x]  /portfolio/deals/index.js should display the list of deals with the ticker filter
             - [ ] and date range filter
-      - [o] delete single deal from /deals page
+      - [x] delete single deal from /deals page
           - [X] show modal with delete confirmation
           - [X] display loading state until mutation complete
           - [X] make dealDelete mutation and display the result
@@ -46,8 +46,10 @@
             - [X] return ticker information in deals for ticker request in order to display ticker on deals page
                   when there are no deals for ticker 
         
-  - [ ] Several Portfolios in account
+  - [in progress] Several Portfolios in account
       - [ ] Create / Edit / Archive
+        - [x] gql schema 
+        - [ ] use ajv schema validation https://github.com/ajv-validator/ajv
     
   - [ ] Release and Deploy
 
