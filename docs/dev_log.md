@@ -29,27 +29,32 @@
   - [x] implement refersh token 
 
 - [X] Portfolio
-  - [X] Add instrument in portfolio:
-       - Date picker https://reactdatepicker.com/
-       - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
-  - [x] List of added assets
-    - [x]  /portfolio should display the list of added items
-    - [x]  /portfolio/deals/index.js should display the list of deals with the ticker filter
-          - [ ] and date range filter
-    - [o] delete single deal from /deals page
-        - [X] show modal with delete confirmation
-        - [ ] display loading state until mutation complete
-        - [X] make dealDelete mutation and display the result
-        - [ ] update deals list 
-        - [ ] display message if there is no deals for ticker
-          - [ ] return ticker information in deals for ticker request in order to display ticker on deals page
-                when there is no deals for ticker 
-      
-    - [ ] add deal from /deals page 
-    - [ ] Several Portfolios in account
+  - [ ] Basic Management  
+    - [X] Add instrument in portfolio:
+         - Date picker https://reactdatepicker.com/
+         - Render component as a render prop in react-hook-form https://react-hook-form.com/api#Controller
+    - [x] List of added assets
+      - [x]  /portfolio should display the list of added items
+      - [x]  /portfolio/deals/index.js should display the list of deals with the ticker filter
+            - [ ] and date range filter
+      - [o] delete single deal from /deals page
+          - [X] show modal with delete confirmation
+          - [X] display loading state until mutation complete
+          - [X] make dealDelete mutation and display the result
+          - [X] update deals list 
+          - [X] don't display deals if there is no any
+            - [X] return ticker information in deals for ticker request in order to display ticker on deals page
+                  when there are no deals for ticker 
+        
+  - [ ] Several Portfolios in account
       - [ ] Create / Edit / Archive
-    - [ ] Release and Deploy  
-  - [ ] Calc portfolio current value  
+    
+  - [ ] Release and Deploy
+
+- [ ] Add broker ref for deal 
+  - [ ] Upload from Sss file  
+ 
+- [ ] Calc portfolio current value  
  
 - [ ] Dashboards 
     - [ ] Single Portfolio Dashboard
