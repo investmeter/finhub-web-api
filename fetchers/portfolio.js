@@ -70,22 +70,21 @@ const typeDefs = gql`
   }
   
   type UserPortfolio {
-    id: Int
+    id: ID
     timestamp_created: String
     status: String
     user_uuid: String
     title:String
     description: String
-    display_options: JSON
+    icon_url: String
   }
   
   input UserPortfolioInput{
     timestamp_created: String
-    status: String
     user_uuid: String
     title:String
     description: String
-    display_options: JSON
+    icon_url: String
   } 
   
   type UserPortfolioResponse{
@@ -309,6 +308,24 @@ const resolvers = {
         }
       }
       return deleteDeal(context.userUuid, args.deal_id)
+    },
+    addUserPortfolio(parent, args, context){
+      if (!context.userUuid){
+        return {
+            error: 'UNAUTHENTICATED',
+            userPortfolio: []
+        }
+      }
+      return {error: "",
+           userPortfolio:[{
+              id:123,
+              timestamp_created: args.user_portfolio.timestamp_created,
+              title: args.user_portfolio.title,
+              description: args.user_portfolio.description,
+              icon_url: args.user_portfolio.icon_url
+            }
+            ]
+      }
     }
   },
   Query: {
