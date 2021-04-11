@@ -279,7 +279,7 @@ function deleteDeal(userUuid, dealId) {
           id: dealId,
           status: "DELETED"
         }]
-      };
+      }
     } else {
       return {
         error: "DEAL_NOT_FOUND",
@@ -294,6 +294,36 @@ function deleteDeal(userUuid, dealId) {
     }
   })
 }
+
+function addUserPortfolio(portfolio){
+  const insertPayload = {
+    user_uuid: 123,
+    title: portfolio.title,
+    description: portfolio.description,
+    display_options: {
+      icon_url: portfolio.icon_url
+    }
+  }
+  return db.knex('user_portfolio').insert(insertPayload).returning('id')
+    .then(
+    (res) => {
+      return {
+        error:"",
+        user_portfolio: [{
+          id: res,
+          ...portfolio,
+        }]
+      }
+    }
+  ).catch( (e) => {
+    return {
+      error: e,
+      user_portfolio:[]
+    }
+  })
+
+}
+
 
 const resolvers = {
   Mutation: {
@@ -316,16 +346,7 @@ const resolvers = {
             userPortfolio: []
         }
       }
-      return {error: "",
-           userPortfolio:[{
-              id:123,
-              timestamp_created: args.user_portfolio.timestamp_created,
-              title: args.user_portfolio.title,
-              description: args.user_portfolio.description,
-              icon_url: args.user_portfolio.icon_url
-            }
-            ]
-      }
+      return addUserPortfolio(args.user_portfolio)
     }
   },
   Query: {
