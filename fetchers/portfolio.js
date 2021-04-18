@@ -295,9 +295,10 @@ function deleteDeal(userUuid, dealId) {
   })
 }
 
-function addUserPortfolio(portfolio){
+function addUserPortfolio(userUuid, portfolio){
   const insertPayload = {
-    user_uuid: 123,
+    user_uuid: userUuid,
+    timestamp_created: new Date(),
     title: portfolio.title,
     description: portfolio.description,
     display_options: {
@@ -309,9 +310,9 @@ function addUserPortfolio(portfolio){
     (res) => {
       return {
         error:"",
-        user_portfolio: [{
-          id: res,
-          ...portfolio,
+        userPortfolio: [{
+          id: res[0],
+          ...insertPayload,
         }]
       }
     }
@@ -346,7 +347,7 @@ const resolvers = {
             userPortfolio: []
         }
       }
-      return addUserPortfolio(args.user_portfolio)
+      return addUserPortfolio(context.userUuid, args.user_portfolio)
     }
   },
   Query: {
