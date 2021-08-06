@@ -28,7 +28,7 @@
   - [x] check max age of refreshed token
   - [x] implement refersh token 
 
-- [X] Portfolio
+- [X] Portfolio Management
   - [x] Basic Management  
     - [X] Add instrument in portfolio:
          - Date picker https://reactdatepicker.com/
@@ -45,13 +45,12 @@
           - [X] don't display deals if there is no any
             - [X] return ticker information in deals for ticker request in order to display ticker on deals page
                   when there are no deals for ticker 
-        
-  - [in progress] Several Portfolios in account
-      - [ ] Create / Edit / Archive
+  - [ ] Several Portfolios in account
+    - [ ] Create / Edit / Archive
         - [x] gql schema 
         - [ ] use ajv schema validation https://github.com/ajv-validator/ajv
     
-  - [ ] Release and Deploy
+  - [x] Release and Deploy
 
 - [ ] Add broker ref for deal 
   - [ ] Upload from Sss file  
