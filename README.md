@@ -32,6 +32,10 @@ node gateway.js
 
   
 # Production 
+
+copy config/default.yml to production.yml
+edit settings 
+
 ```shell
 pm2 start pm2.ecosystem.config.js
 pm2 restart pm2.ecosystem.config.js
