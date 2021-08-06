@@ -31,3 +31,10 @@ node gateway.js
 ```
 
   
+# Production 
+```shell
+pm2 start pm2.ecosystem.config.js
+pm2 restart pm2.ecosystem.config.js
+pm2 start pm2.ecosystem.config.js --only "finhub-web-api"
+pm2 start pm2.ecosystem.config.js --only "finhub-web-front"
+```
