@@ -5,7 +5,7 @@ const logger = require("../core/logger")
 const database = require("../core/database")
 const GraphQLJSON = require("graphql-type-json");
 
-const typeDefs = `
+const typeDefs = gql`
      scalar JSON
      scalar DateTime
         
@@ -28,9 +28,14 @@ const typeDefs = `
       # icon(sort: String, limit: Int, start: Int, where: JSON): [UploadFile]
     }
     
+    type SecurityResponse {
+    error: String
+    asset: Security
+    }
     
     type Query { 
         securities(sort: String,limit: Int,start: Int,search: String): [Security]
+        assetInfo(asset_id: Int): SecurityResponse
     }
 `
 
@@ -72,10 +77,48 @@ const fetchSecurities = async (args, strapiConfig) =>  {
 
 }
 
+function assetIno(assetId){
+
+  return db.knex.raw(
+    `select  s.id, s.type, s.ticker,s.currency, s.title, s.provider_info
+     from securities s where s.id = :asset_id
+    `,
+    {asset_id:assetId}
+  ).then(
+    (res) => {
+
+      return  res.rowCount === 1
+        ? {
+        error:'',
+        asset: res.rows[0]
+      }: {
+        error:'ASSET_NOT_FOUND',
+        asset: undefined
+      }
+    }
+  ).catch((e) => {
+    console.log(e)
+    return {
+      error:"COULD_NOT_FETCH",
+      asset:undefined
+    }
+  } )
+
+
+
+}
+
 const resolvers = {
   Query: {
     securities(parent, args, context, info) {
       return fetchSecurities(args)
+    },
+    assetInfo(parent, args, context, info){
+      return !context.userUuid
+        ? {error:"UNAUTHORIZED",
+        asset:undefined}
+        : assetIno(args.asset_id)
+
     }
   },
   JSON: GraphQLJSON

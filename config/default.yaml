@@ -7,6 +7,7 @@ token:
 database:
   client: postgres
   connection:
+    host: "localhost"
     database: 'finhub'
     user: 'postgres'
     password: '12345'
