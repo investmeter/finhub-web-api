@@ -18,7 +18,7 @@ GET https://eodhistoricaldata.com/api/eod/GAZP.MCX?api_token=637fdf2ad211e8.8562
 GET https://eodhistoricaldata.com/api/search/GAZPROM?api_token=637fdf2ad211e8.85627921 
 
 ###
-GET https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?api_token=637fdf2ad211e8.85627921 
+GET https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?api_token=637fdf2ad211e8.85627921&fmt=json 
 
 ###
 https://eodhistoricaldata.com/api/exchanges-list/?api_token=637fdf2ad211e8.85627921
