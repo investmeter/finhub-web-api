@@ -1,0 +1,2904 @@
+{
+    "date": "Fri, 25 Nov 2022 14:50:00 GMT",
+    "exchange": "mcx",
+    "tickers": [
+        {
+            "Code": "ABRD",
+            "Name": "Abrau Durso OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JS5T7"
+        },
+        {
+            "Code": "AFKS",
+            "Name": "AFK Sistema",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DQZE3"
+        },
+        {
+            "Code": "AFLT",
+            "Name": "Aeroflot",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009062285"
+        },
+        {
+            "Code": "AGRO",
+            "Name": "Ros Agro PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "US7496552057"
+        },
+        {
+            "Code": "AKGD",
+            "Name": "AKGD ETF Gold",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1045N8"
+        },
+        {
+            "Code": "AKMB",
+            "Name": "Alfa-Kapital Upravlyaemye obligatsii BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "AKME",
+            "Name": "ETF AKME Alfa Managed Equties",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A102E78"
+        },
+        {
+            "Code": "AKMM",
+            "Name": "AKMM",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "CHFZAR",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "AKRN",
+            "Name": "Public Joint Stock Company Acron",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009028674"
+        },
+        {
+            "Code": "AKSC",
+            "Name": "AKSC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "AKVG",
+            "Name": "AKVG",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "ALRS",
+            "Name": "ALROSA ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007252813"
+        },
+        {
+            "Code": "AMEZ",
+            "Name": "Ashinskiy Metzavod PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0B88G6"
+        },
+        {
+            "Code": "AMRB",
+            "Name": "AMRB ETF Russian Bonds +",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "AMRE",
+            "Name": "AMRE ETF Russian Equities +",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "AMRH",
+            "Name": "AMRH",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "APTK",
+            "Name": "Apteki 36",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008081765"
+        },
+        {
+            "Code": "AQUA",
+            "Name": "Russkaya Akvakultura PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQTS3"
+        },
+        {
+            "Code": "ARSA",
+            "Name": "UK Arsagera",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP0Q7"
+        },
+        {
+            "Code": "ASSB",
+            "Name": "Astrakhanskaya energosbytovaya OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8MM8"
+        },
+        {
+            "Code": "AVAN",
+            "Name": "AKB Avangard OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DM7B3"
+        },
+        {
+            "Code": "BANE",
+            "Name": "ANK Bashneft PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007976957"
+        },
+        {
+            "Code": "BANEP",
+            "Name": "Public Joint Stock Oil Company Bashneft",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "BCSB",
+            "Name": "BCSB ETF High Yield SME Bonds",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "BELU",
+            "Name": "Beluga Group PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0HL5M1"
+        },
+        {
+            "Code": "BISVP",
+            "Name": "Public Joint-Stock Company Bashinformsvyaz RUB1 PRF'A'(USD)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "BLNG",
+            "Name": "Belon ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0J2QG8"
+        },
+        {
+            "Code": "BOND",
+            "Name": "DOHOD Cbonds Corp. Bonds",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "BRZL",
+            "Name": "Buryatzoloto ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009288658"
+        },
+        {
+            "Code": "BSPB",
+            "Name": "\"Bank \"Saint-Petersburg\" Public Joint-Stock Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100945"
+        },
+        {
+            "Code": "BSPBP",
+            "Name": "Bank Saint-Petersburg Public Joint-Stock Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "CBOM",
+            "Name": "Moskovskiy Kreditnyi Bank OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JUG31"
+        },
+        {
+            "Code": "CHGZ",
+            "Name": "RN Zapadnaya Sibir\u2019 PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009082291"
+        },
+        {
+            "Code": "CHKZ",
+            "Name": "Chelyabinskiy Kuznechno Presso",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNST0"
+        },
+        {
+            "Code": "CHMF",
+            "Name": "Public Joint Stock Company Severstal",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009046510"
+        },
+        {
+            "Code": "CHMK",
+            "Name": "Chelyabinsk Metallurg Kombinat",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007665170"
+        },
+        {
+            "Code": "CIAN",
+            "Name": "Cian PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "CNTL",
+            "Name": "Tsentralnyi Telegraf PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007665147"
+        },
+        {
+            "Code": "CNTLP",
+            "Name": "Central Telegraph Public Joint Stock Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "DASB",
+            "Name": "Dagestanskaya Energosbytovaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0F63G0"
+        },
+        {
+            "Code": "DIOD",
+            "Name": "Diod OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQWC1"
+        },
+        {
+            "Code": "DIVD",
+            "Name": "DOKHOD Indeks dividenddnykh aktsiy RF BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A102N02"
+        },
+        {
+            "Code": "DSKY",
+            "Name": "Detskiy Mir PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JSQ90"
+        },
+        {
+            "Code": "DVEC",
+            "Name": "Public joint stock company FAR-EASTERN ENERGY COMPANY",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP2W1"
+        },
+        {
+            "Code": "DZRD",
+            "Name": "Donskoy Zavod Radiodetaley OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQW11"
+        },
+        {
+            "Code": "DZRDP",
+            "Name": "DONSKOY FACTORY OF RADIOCOMPONENTS Open Joint-Stock Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "EELT",
+            "Name": "Yevropyeyskaya Elyektrotyekhnika PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JWW54"
+        },
+        {
+            "Code": "ELTZ",
+            "Name": "Elektrotsink ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0B66V1"
+        },
+        {
+            "Code": "ENPG",
+            "Name": "En Plus\u00a0Group International Pao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A100K72"
+        },
+        {
+            "Code": "ENRU",
+            "Name": "Enel Russia OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0F5UN3"
+        },
+        {
+            "Code": "EQMX",
+            "Name": "EQMX",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A101EJ5"
+        },
+        {
+            "Code": "ESGE",
+            "Name": "ESGE",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103LL2"
+        },
+        {
+            "Code": "ESGR",
+            "Name": "ESGR ETF RSHB-MOEX-RSPP VecTR",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A101R66"
+        },
+        {
+            "Code": "ETLN",
+            "Name": "Etalon Group PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "FEES",
+            "Name": "FSK EES",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPNN9"
+        },
+        {
+            "Code": "FESH",
+            "Name": "Dal\u2019nevostochnoye Morskoye Parokhodstvo PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008992318"
+        },
+        {
+            "Code": "FIVE",
+            "Name": "X5 Retail Group NV",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "US98387E2054"
+        },
+        {
+            "Code": "FIXP",
+            "Name": "Fix Price Group Ltd.",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "FLOT",
+            "Name": "Sovkomflot PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JXNU8"
+        },
+        {
+            "Code": "FMRU",
+            "Name": "ETF FMRU Divid Aristocrats RF",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1036B2"
+        },
+        {
+            "Code": "FMUS",
+            "Name": "Dividendnye Aristokraty SShA BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "GAZA",
+            "Name": "Gaz PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009034268"
+        },
+        {
+            "Code": "GAZAP",
+            "Name": "Public Joint Stock Company GAZ",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "GAZP",
+            "Name": "Gazprom PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007661625"
+        },
+        {
+            "Code": "GCHE",
+            "Name": "Gruppa Cherkizovo ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JL4R1"
+        },
+        {
+            "Code": "GEMA",
+            "Name": "MMTsB PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A100GC7"
+        },
+        {
+            "Code": "GEMC",
+            "Name": "United Medical Group CY PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "GLTR",
+            "Name": "Globaltrans Investment Plc",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "GMKN",
+            "Name": "GMK Norilskiy Nikel PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007288411"
+        },
+        {
+            "Code": "GOLD",
+            "Name": "GOLD",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A101NZ2"
+        },
+        {
+            "Code": "GPBM",
+            "Name": "Gazprombank-Korporativnye obligatsii 4goda BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1009F0"
+        },
+        {
+            "Code": "GPBR",
+            "Name": "GPBR",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "GPBS",
+            "Name": "GPBS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "GRNT",
+            "Name": "Gorodskiye Innovatsionnyye Tekhnologii PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JV532"
+        },
+        {
+            "Code": "GROD",
+            "Name": "ETF GROD DOHOD RUS GROWTH IND",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1037V8"
+        },
+        {
+            "Code": "GTRK",
+            "Name": "Globaltruck Management PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ZYD22"
+        },
+        {
+            "Code": "HHRU",
+            "Name": "HeadHunter Group PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "HIMCP",
+            "Name": "Khimprom Public Joint stock company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009099006"
+        },
+        {
+            "Code": "HMSG",
+            "Name": "HMS Hydraulic Machines & Systems Group PLC DRC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "US40425X4079"
+        },
+        {
+            "Code": "HYDR",
+            "Name": "FGK Rusgidro PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPKH7"
+        },
+        {
+            "Code": "IGST",
+            "Name": "Izhstal OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0002155292"
+        },
+        {
+            "Code": "IGSTP",
+            "Name": "Izhstal PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "INFL",
+            "Name": "INFL",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "INGO",
+            "Name": "INGO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "INGR",
+            "Name": "Ingrad PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DJ9B4"
+        },
+        {
+            "Code": "INRU",
+            "Name": "INRU",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "IRAO",
+            "Name": "Inter rao ees",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPNM1"
+        },
+        {
+            "Code": "IRKT",
+            "Name": "Np Korporatsiya Irkut OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006752979"
+        },
+        {
+            "Code": "ISKJ",
+            "Name": "Institut Stvolovykh Kletok Cheloveka PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNAB6"
+        },
+        {
+            "Code": "JNOS",
+            "Name": "Slavneft-JANOS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100895"
+        },
+        {
+            "Code": "JNOSP",
+            "Name": "Public Joint Stock Company Slavneft-Yaroslavnefteorgsintez",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KAZT",
+            "Name": "Public Joint Stock Company KuibyshevAzot",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0B9BV2"
+        },
+        {
+            "Code": "KAZTP",
+            "Name": "Public Joint Stock Company KuibyshevAzot",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KBSB",
+            "Name": "TNS Energo Kuban\u2019 PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNJ11"
+        },
+        {
+            "Code": "KCHE",
+            "Name": "Kamchatskenergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006753498"
+        },
+        {
+            "Code": "KCHEP",
+            "Name": "Public Joint Stock Company Kamchatskenergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KGKC",
+            "Name": "Kurganskaya Generiruyushchaya Kompaniya PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP120"
+        },
+        {
+            "Code": "KGKCP",
+            "Name": "Public Joint Stock Company Kurgan Generation Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KLSB",
+            "Name": "Kaluzhsk Sbytovaya Kompaniya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DKZK3"
+        },
+        {
+            "Code": "KMAZ",
+            "Name": "KAMAZ Publicly Traded Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008959580"
+        },
+        {
+            "Code": "KMEZ",
+            "Name": "Kovrovskiy Mekhanicheskiy",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006753613"
+        },
+        {
+            "Code": "KMTZ",
+            "Name": "Kosaya Gora Iron Works JSC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KOGK",
+            "Name": "Korshunovskii GOK",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0002155359"
+        },
+        {
+            "Code": "KRKN",
+            "Name": "Saratovskiy NPZ ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100408"
+        },
+        {
+            "Code": "KRKNP",
+            "Name": "Public Joint Stock Company Saratov Oil Refinery",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KRKOP",
+            "Name": "Public Joint Stock Company The Taganrog Boiler-Making Works Krasny Kotelshchik",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KROT",
+            "Name": "MKF Krasnyi Oktyabr PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008913850"
+        },
+        {
+            "Code": "KROTP",
+            "Name": "Joint-Stock Company Krasnyj Octyabr RUB1 PRF(RUB)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KRSB",
+            "Name": "Krasnoyarskenergosbyt PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0HMLY1"
+        },
+        {
+            "Code": "KRSBP",
+            "Name": "Public Joint Stock Company Krasnoyarskenergosbyt",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KTSB",
+            "Name": "Kostromskaya Sbytovaya Kompaniya PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8LW9"
+        },
+        {
+            "Code": "KTSBP",
+            "Name": "Public Joint Stock Company Kostroma Power Sale Company RUB0.04 PRF(USD)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "KUBE",
+            "Name": "KubanEnrg",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009046767"
+        },
+        {
+            "Code": "KUZB",
+            "Name": "Bank Kuznetskiy OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JSQ66"
+        },
+        {
+            "Code": "KZOS",
+            "Name": "Organicheskiy Sintez KPAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009089825"
+        },
+        {
+            "Code": "KZOSP",
+            "Name": "Kazan Public Joint Stock Company Organichesky sintez",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "LENT",
+            "Name": "MK Lenta PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "LIFE",
+            "Name": "Farmsintez OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JR514"
+        },
+        {
+            "Code": "LKOH",
+            "Name": "NK Lukoil PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009024277"
+        },
+        {
+            "Code": "LNZL",
+            "Name": "Lenzoloto PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP1N2"
+        },
+        {
+            "Code": "LNZLP",
+            "Name": "Lena Gold-Mining Public Joint Stock Company Lenzoloto",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "LPSB",
+            "Name": "Lipetskaya energosbytovaya OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8MR7"
+        },
+        {
+            "Code": "LQDT",
+            "Name": "LQDT",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1014L8"
+        },
+        {
+            "Code": "LSNG",
+            "Name": "LenEnrg",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009034490"
+        },
+        {
+            "Code": "LSNGP",
+            "Name": "Public Joint stock company Rosseti Lenenergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "LSRG",
+            "Name": "Gruppa LSR PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPFP0"
+        },
+        {
+            "Code": "LVHK",
+            "Name": "Levenguk OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JT7Y2"
+        },
+        {
+            "Code": "MAGE",
+            "Name": "Magadanenergo ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006758919"
+        },
+        {
+            "Code": "MAGEP",
+            "Name": "Public Joint Stock Company Magadanenergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "MAGN",
+            "Name": "Magnitogorskiy Metallurgicheskiy Kombinat PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009084396"
+        },
+        {
+            "Code": "MBEQ",
+            "Name": "MBEQ",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "MBGB",
+            "Name": "MBGB",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "MDMG",
+            "Name": "MD Medical Group Investments Plc",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "MERF",
+            "Name": "Pifn Meridian OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQ128"
+        },
+        {
+            "Code": "MFGS",
+            "Name": "Slavneft Megionneftegaz PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009011126"
+        },
+        {
+            "Code": "MFGSP",
+            "Name": "Joint-stock company Slavneft-Megionneftegas",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "MGNT",
+            "Name": "Magnit",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JKQU8"
+        },
+        {
+            "Code": "MGNZ",
+            "Name": "Solikamskiy Magniyevyi Zavod",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100911"
+        },
+        {
+            "Code": "MGTS",
+            "Name": "Moskovskaya Gorodskaya Telefonnaya Set PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009036461"
+        },
+        {
+            "Code": "MGTSP",
+            "Name": "Public Joint Stock Company Moscow City Telephone Network",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "MISB",
+            "Name": "TNS Energo Mariy El PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8K33"
+        },
+        {
+            "Code": "MISBP",
+            "Name": "Public Joint-stock Company TNS energo Mari El RUB0.1 PRF(RUB)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "MKBD",
+            "Name": "MKBD ETF Russian Div. Shares",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103BX8"
+        },
+        {
+            "Code": "MOEX",
+            "Name": "Moskovskaya Birzha OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JR4A1"
+        },
+        {
+            "Code": "MRKC",
+            "Name": "MRSK Tsentra PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPL8"
+        },
+        {
+            "Code": "MRKK",
+            "Name": "Rosseti Severnyi Kavkaz PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPQ7"
+        },
+        {
+            "Code": "MRKP",
+            "Name": "Rosseti Tsentr I Privolzh\u2019ye PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPN96"
+        },
+        {
+            "Code": "MRKS",
+            "Name": "Rosseti Sibir\u2019 PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPF0"
+        },
+        {
+            "Code": "MRKU",
+            "Name": "Mezhregional\u2019naya Raspredelitel\u2019naya Setevaya Kompaniya Urala OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPT1"
+        },
+        {
+            "Code": "MRKV",
+            "Name": "Rosseti Volga PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPN4"
+        },
+        {
+            "Code": "MRKY",
+            "Name": "Rosseti Yug PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPG8"
+        },
+        {
+            "Code": "MRKZ",
+            "Name": "Rosseti Severo Zapad PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPPB9"
+        },
+        {
+            "Code": "MRSB",
+            "Name": "Mordovskaya Energosbytovaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D9AJ7"
+        },
+        {
+            "Code": "MSNG",
+            "Name": "MosEnrg",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008958863"
+        },
+        {
+            "Code": "MSRS",
+            "Name": "Mos obl sb",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ET7Y7"
+        },
+        {
+            "Code": "MSTT",
+            "Name": "Mostotrest",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009177331"
+        },
+        {
+            "Code": "MTEK",
+            "Name": "Freedom-Lidery tekhnologii BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "MTLR",
+            "Name": "Mechel PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DKXV5"
+        },
+        {
+            "Code": "MTLRP",
+            "Name": "Mechel PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "MTSS",
+            "Name": "Mobil\u2019nye Telesistemy PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007775219"
+        },
+        {
+            "Code": "MVID",
+            "Name": "MVideo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPGA0"
+        },
+        {
+            "Code": "NAUK",
+            "Name": "Npo Nauka OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JRPX9"
+        },
+        {
+            "Code": "NFAZ",
+            "Name": "NEFAZ Publicly Traded Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009115604"
+        },
+        {
+            "Code": "NKHP",
+            "Name": "Novorossiyskiy Kombinat Khleboproduktov PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0BLWD7"
+        },
+        {
+            "Code": "NKNC",
+            "Name": "Nizhnekamskneftekhim PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100507"
+        },
+        {
+            "Code": "NKNCP",
+            "Name": "Public Joint Stock Company Nizhnekamskneftekhim",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "NKSH",
+            "Name": "Nizhnekamskshina ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100515"
+        },
+        {
+            "Code": "NLMK",
+            "Name": "Novolipetsk Steel PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009046452"
+        },
+        {
+            "Code": "NMTP",
+            "Name": "Novorossiyskiy Morskoy Torgovyi Port PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009084446"
+        },
+        {
+            "Code": "NNSB",
+            "Name": "TNS Energo Nizhniy Novgorod PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ET5A1"
+        },
+        {
+            "Code": "NNSBP",
+            "Name": "Public Joint-Stock Company TNS energo Nizhny Novgorod",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "NSVZ",
+            "Name": "Nauka-Svyaz OAO ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQLB6"
+        },
+        {
+            "Code": "NVTK",
+            "Name": "NOVATEK",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DKVS5"
+        },
+        {
+            "Code": "OBLG",
+            "Name": "OBLG",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1002S8"
+        },
+        {
+            "Code": "ODVA",
+            "Name": "Mediaholding OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPWV3"
+        },
+        {
+            "Code": "OGKB",
+            "Name": "Public Joint-Stock Company \"Second Generating Company of the Electric Power Wholesale Market\"",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNG55"
+        },
+        {
+            "Code": "OKEY",
+            "Name": "O'Key Group SA DRC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "US6708662019"
+        },
+        {
+            "Code": "OMZZP",
+            "Name": "Open Joint Stock Company OMZ",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009090559"
+        },
+        {
+            "Code": "OPNB",
+            "Name": "Otkrytie-Obligatsii RF BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103HB1"
+        },
+        {
+            "Code": "OPNR",
+            "Name": "OPNR",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "ORUP",
+            "Name": "OR PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JXKG3"
+        },
+        {
+            "Code": "OZON",
+            "Name": "Ozon Holdings PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "PAZA",
+            "Name": "Pavlovskiy Avtobus OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009083240"
+        },
+        {
+            "Code": "PHOR",
+            "Name": "PhosAgro ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JRKT8"
+        },
+        {
+            "Code": "PIKK",
+            "Name": "Public Joint Stock Company PIK-specialized homebuilder",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP7J7"
+        },
+        {
+            "Code": "PLZL",
+            "Name": "Polyus PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNAA8"
+        },
+        {
+            "Code": "PMSB",
+            "Name": "Permskaya Energosbytovaya OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ET123"
+        },
+        {
+            "Code": "PMSBP",
+            "Name": "Public Joint Stock Company Perm Energy Supplying Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "POLY",
+            "Name": "Polymetal International PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "JE00B6T5S470"
+        },
+        {
+            "Code": "POSI",
+            "Name": "Gruppa Pozitiv PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A103X66"
+        },
+        {
+            "Code": "PRFN",
+            "Name": "Chzpsn-Profnastil OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNXF9"
+        },
+        {
+            "Code": "PRMB",
+            "Name": "Akb Primorye OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DPNQ5"
+        },
+        {
+            "Code": "QIWI",
+            "Name": "QIWI plc",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "RASP",
+            "Name": "Raspadskaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0B90N8"
+        },
+        {
+            "Code": "RBCM",
+            "Name": "RBK ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JR6A6"
+        },
+        {
+            "Code": "RCGL",
+            "Name": "RCGL",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "RCHY",
+            "Name": "RCHY ETF Raiff Hyield Bonds",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103E02"
+        },
+        {
+            "Code": "RCMM",
+            "Name": "RCMM ETF Raiff MoneyMarketFund",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103FF6"
+        },
+        {
+            "Code": "RCMX",
+            "Name": "RCMX ETF MOEX Total Return 15",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A101MF6"
+        },
+        {
+            "Code": "RCUS",
+            "Name": "RCUS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "RDRB",
+            "Name": "Rossiyskiy Aktsionernyi Kommercheskiy Dorozhnyi Bank PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JU6Q7"
+        },
+        {
+            "Code": "RENI",
+            "Name": "Gruppa Renessans Strakhovaniye PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ZZM04"
+        },
+        {
+            "Code": "RGSS",
+            "Name": "Rosgosstrakh OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008010855"
+        },
+        {
+            "Code": "RKKE",
+            "Name": "RKK Energia",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009095939"
+        },
+        {
+            "Code": "RNFT",
+            "Name": "RussNeft",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JSE60"
+        },
+        {
+            "Code": "ROLO",
+            "Name": "Rusolovo OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JU1B0"
+        },
+        {
+            "Code": "ROSB",
+            "Name": "AKB Rosbank PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0HHK26"
+        },
+        {
+            "Code": "ROSN",
+            "Name": "NK Rosneft PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0J2Q06"
+        },
+        {
+            "Code": "ROST",
+            "Name": "ROSINTER RESTAURANTS ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP922"
+        },
+        {
+            "Code": "RQIE",
+            "Name": "RQIE",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "RQIU",
+            "Name": "RQIU",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "RSTI",
+            "Name": "Rossiyskiye Seti PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPVJ0"
+        },
+        {
+            "Code": "RSTIP",
+            "Name": "Rosseti Public Joint Stock Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "RTGZ",
+            "Name": "Gazprom Gazoraspredeleniye",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPG04"
+        },
+        {
+            "Code": "RTKM",
+            "Name": "Rostelekom PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008943394"
+        },
+        {
+            "Code": "RTKMP",
+            "Name": "Public Joint Stock Company Rostelecom",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "RTSB",
+            "Name": "TNS Energo Rostov-Na-Donu PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8PB4"
+        },
+        {
+            "Code": "RTSBP",
+            "Name": "Public Joint Stock Company \"TNS energo Rostov-on-Don\"",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "RU000A101NK4",
+            "Name": "Primary Placement Fund CEIF RU",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A101NK4"
+        },
+        {
+            "Code": "RUAL",
+            "Name": "OK Rusal MKPAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A1025V3"
+        },
+        {
+            "Code": "RUGR",
+            "Name": "Rusgrain Holding OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPNP4"
+        },
+        {
+            "Code": "RUSI",
+            "Name": "RUSS-INVEST IC ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQ9W5"
+        },
+        {
+            "Code": "RZSB",
+            "Name": "Ryazansk Energetich Sbytovaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D9AF5"
+        },
+        {
+            "Code": "SAGO",
+            "Name": "SamaraEnergo ao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009098255"
+        },
+        {
+            "Code": "SAGOP",
+            "Name": "Public Joint-Stock Energy and Electrification Company Samaraenergo RUB0.01 PRF(USD)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "SARE",
+            "Name": "Saratovenergo OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100754"
+        },
+        {
+            "Code": "SAREP",
+            "Name": "Public Joint Stock Company Saratovenergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "SBCS",
+            "Name": "SBCS ETF conservative smart",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1035N9"
+        },
+        {
+            "Code": "SBER",
+            "Name": "Sberbank Rossii PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009029540"
+        },
+        {
+            "Code": "SBERP",
+            "Name": "Sberbank Rossii OAO Pref",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009029557"
+        },
+        {
+            "Code": "SBGB",
+            "Name": "SBERBANK - INDEKS MOSBIRZHI GOSUDARSTVENNYKH OBLIGATSIY",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1000F9"
+        },
+        {
+            "Code": "SBGD",
+            "Name": "SBGD",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "SBHI",
+            "Name": "SBHI ETF Halal investments",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103ZQ1"
+        },
+        {
+            "Code": "SBMM",
+            "Name": "SBMM ETF Sber Money Market",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A103RF1"
+        },
+        {
+            "Code": "SBMX",
+            "Name": "Sberbank MOEX Russia Total Return",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A0ZZH92"
+        },
+        {
+            "Code": "SBRB",
+            "Name": "Sberbank-Ind MosBirzhi rublevykh korp obligacii",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A100P44"
+        },
+        {
+            "Code": "SBRI",
+            "Name": "Sber-Otvetstvennye investitsii BPIRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1024P8"
+        },
+        {
+            "Code": "SELG",
+            "Name": "Seligdar",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPR50"
+        },
+        {
+            "Code": "SFIN",
+            "Name": "SFI PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JVW89"
+        },
+        {
+            "Code": "SFTL",
+            "Name": "Softline Holding PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "SGZH",
+            "Name": "Segezha Group PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A102XG9"
+        },
+        {
+            "Code": "SIBG",
+            "Name": "Ays Stim Rus PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JVA36"
+        },
+        {
+            "Code": "SIBN",
+            "Name": "Gazprom Neft",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009062467"
+        },
+        {
+            "Code": "SLEN",
+            "Name": "Sakhalinenergo OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009280465"
+        },
+        {
+            "Code": "SMLT",
+            "Name": "Gk Samolet\u00a0Pao",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ZZG02"
+        },
+        {
+            "Code": "SNGS",
+            "Name": "Surgutneftegaz PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008926258"
+        },
+        {
+            "Code": "SNGSP",
+            "Name": "Surgut-pref",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009029524"
+        },
+        {
+            "Code": "SPBC",
+            "Name": "ETF SPBC Corporate bonds 1000",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "SPBE",
+            "Name": "SPB Birzha PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JQ9P9"
+        },
+        {
+            "Code": "SPBF",
+            "Name": "ETF SPBF OFZ 1000",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1038S2"
+        },
+        {
+            "Code": "STSB",
+            "Name": "StavropolEnergoSbyt",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ET1W4"
+        },
+        {
+            "Code": "STSBP",
+            "Name": "Stavropolenergosbyt Public Joint-Stock Company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "SUGB",
+            "Name": "MKB Investments Asset Management JSC units of the exchange traded fund",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "SVAV",
+            "Name": "Sollers",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006914488"
+        },
+        {
+            "Code": "SVET",
+            "Name": "Svetofor Group PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A100592"
+        },
+        {
+            "Code": "TASB",
+            "Name": "Tambovskaya Energosbytovaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8NG8"
+        },
+        {
+            "Code": "TASBP",
+            "Name": "Public Joint Stock Company Tambov Power Supply Company RUB0.02 PRF(USD)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "TATN",
+            "Name": "Tatneft PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009033591"
+        },
+        {
+            "Code": "TATNP",
+            "Name": "Tatneft OAO Pref",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006944147"
+        },
+        {
+            "Code": "TBEU",
+            "Name": "TBEU",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TBRU",
+            "Name": "TBRU ETF TINKOFF BONDS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1039N1"
+        },
+        {
+            "Code": "TBUY",
+            "Name": "TBUY",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TCBR",
+            "Name": "TCBR ETF TINKOFF CYBERSECURITY",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TCSG",
+            "Name": "TCS Group Holding PLC",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "TEMS",
+            "Name": "TEMS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TEUR",
+            "Name": "TEUR",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1011T7"
+        },
+        {
+            "Code": "TEUS",
+            "Name": "TEUS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TFNX",
+            "Name": "Tinkoff Fintech companies",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TGKA",
+            "Name": "Public Joint Stock Company Territorial Generating Company No. 1",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNUD0"
+        },
+        {
+            "Code": "TGKB",
+            "Name": "Territorial\u2019naya Generiruyushchaya Kompaniya No2 PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNGS7"
+        },
+        {
+            "Code": "TGKBP",
+            "Name": "Public Joint-Stock Company Territorial Generation Company No.2",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "TGKN",
+            "Name": "Territorial\u2019naya Generiruyushchaya Kompaniya No 14 PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0H1ES3"
+        },
+        {
+            "Code": "TGLD",
+            "Name": "Tinkoff Zoloto ETF",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TGRN",
+            "Name": "TGRN",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TMOS",
+            "Name": "Tinkoff Indeks Mosbirzhi BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A101X76"
+        },
+        {
+            "Code": "TNSE",
+            "Name": "GK TNS energo PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JUCQ5"
+        },
+        {
+            "Code": "TORS",
+            "Name": "Tomskaya Raspredelitelnaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0ETZF2"
+        },
+        {
+            "Code": "TORSP",
+            "Name": "public-stock company Tomsk distribution company",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "TPAS",
+            "Name": "TPAS",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TRAI",
+            "Name": "Tinkoff Nasdaq Artificial Intel",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TRMK",
+            "Name": "PAO TMK",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0B6NK6"
+        },
+        {
+            "Code": "TRNFP",
+            "Name": "AK Transneft OAO Pref",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009091573"
+        },
+        {
+            "Code": "TRUR",
+            "Name": "Tinkoff-Strategiya vechnogo portfelya vRUB BPIFRFI",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": "RU000A1011U5"
+        },
+        {
+            "Code": "TSOX",
+            "Name": "Tinkoff Nasdaq Semiconductors",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TSPV",
+            "Name": "TSPV",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TSPX",
+            "Name": "Thinkoff S&P 500 ETF",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TSST",
+            "Name": "TSST",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TTLK",
+            "Name": "Tattelekom",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0HM5C1"
+        },
+        {
+            "Code": "TUSD",
+            "Name": "Tinkoff Capital units of the exchange traded fund",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "USD",
+            "Type": "ETF",
+            "Isin": null
+        },
+        {
+            "Code": "TUZA",
+            "Name": "Tuymazinskiy zavod avtobetonovozov OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0HL7A2"
+        },
+        {
+            "Code": "UCSS",
+            "Name": "Obyedinennye Kreditnye Sist",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JTQK0"
+        },
+        {
+            "Code": "UKUZ",
+            "Name": "Uzhnyi Kuzbass",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0005294775"
+        },
+        {
+            "Code": "UNAC",
+            "Name": "Ob\u2019\u2019yedinennaya Aviastroitel\u2019naya Korporatsiya PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPLZ7"
+        },
+        {
+            "Code": "UNKL",
+            "Name": "Kombinat Yuzhuralnikel' OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0004887991"
+        },
+        {
+            "Code": "UPRO",
+            "Name": "Unipro",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JNGA5"
+        },
+        {
+            "Code": "URKZ",
+            "Name": "Uralskaya Kuznitsa OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JPFY2"
+        },
+        {
+            "Code": "USBN",
+            "Name": "Bank Uralsib OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006929536"
+        },
+        {
+            "Code": "UTAR",
+            "Name": "UTair Aviakompaniya OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007661385"
+        },
+        {
+            "Code": "UWGN",
+            "Name": "Pao Nauchno-Proizvodstvennaya",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JVBT9"
+        },
+        {
+            "Code": "VEON-RX",
+            "Name": "VEON Ltd",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "VGSB",
+            "Name": "Volgogradenergosbyt OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8L73"
+        },
+        {
+            "Code": "VGSBP",
+            "Name": "Volgogradenergosbyt Public Joint-Stock Company RUB0.12 PRF(RUB)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "VJGZ",
+            "Name": "Var\u2019yeganneftegaz PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009046460"
+        },
+        {
+            "Code": "VJGZP",
+            "Name": "Public Joint Stock Company Varyoganneftegaz",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "VKCO",
+            "Name": "VK Company Limited",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "VLHZ",
+            "Name": "Vladimirskiy Khimicheskiy",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007984761"
+        },
+        {
+            "Code": "VRSB",
+            "Name": "Voronezh SB",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0DPG67"
+        },
+        {
+            "Code": "VRSBP",
+            "Name": "Public Joint Stock Company TNS energo Voronezh RUB0.4 PRF(RUB)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "VSMO",
+            "Name": "Korporatsiya VSMPO AVISMA PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009100291"
+        },
+        {
+            "Code": "VSYD",
+            "Name": "Vyborgskiy sudostroitelnyi zavod OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0006334372"
+        },
+        {
+            "Code": "VSYDP",
+            "Name": "Public joint-stock company Vyborg Shipyard",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "VTBR",
+            "Name": "Bank VTB PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0JP5V6"
+        },
+        {
+            "Code": "WTCM",
+            "Name": "Tsentr Mezhdunarodnoy Torgovli PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0008137070"
+        },
+        {
+            "Code": "WTCMP",
+            "Name": "Joint Stock Company \"World Trade Center Moscow\" RUB1 PRF(USD)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "YAKG",
+            "Name": "Yakutskaya Toplivno Energeticheskaya Kompaniya PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0007796819"
+        },
+        {
+            "Code": "YKEN",
+            "Name": "YakutskEnergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009257075"
+        },
+        {
+            "Code": "YKENP",
+            "Name": "Public joint stock company Yakutskenergo",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "YNDX",
+            "Name": "Yandex NV",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "NL0009805522"
+        },
+        {
+            "Code": "YRSB",
+            "Name": "TNS Energo Yaroslavl PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU000A0D8760"
+        },
+        {
+            "Code": "YRSBP",
+            "Name": "Public Joint Stock Company TNS Energo Yaroslavl RUB1 PRF(USD)",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": null
+        },
+        {
+            "Code": "ZILL",
+            "Name": "AMO ZIL PAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009086193"
+        },
+        {
+            "Code": "ZVEZ",
+            "Name": "Zvezda OAO",
+            "Country": "Russia",
+            "Exchange": "MCX",
+            "Currency": "RUB",
+            "Type": "Common Stock",
+            "Isin": "RU0009091300"
+        }
+    ]
+}
