@@ -11,17 +11,18 @@ GET  http://api.marketstack.com/v1/tickers/GAZP.MISX?access_key=a144b7d1a13a321b
 // Good to go 
 //  checked with tinkoff data = it's ok 
 
+@eod_api_key = {{$processEnv %EODHISTORICALDATA_API_KEY}}
 ###
-GET https://eodhistoricaldata.com/api/eod/GAZP.MCX?api_token=637fdf2ad211e8.85627921&fmt=json
+GET https://eodhistoricaldata.com/api/eod/GAZP.MCX?api_token={{eod_api_key}}&fmt=json
 
 ###
-GET https://eodhistoricaldata.com/api/search/GAZPROM?api_token=637fdf2ad211e8.85627921 
+GET https://eodhistoricaldata.com/api/search/GAZPROM?api_token={{eod_api_key}} 
 
 ###
-GET https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?api_token=637fdf2ad211e8.85627921&fmt=json 
+GET https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?api_token={{eod_api_key}}&fmt=json 
 
 ###
-https://eodhistoricaldata.com/api/exchanges-list/?api_token=637fdf2ad211e8.85627921
+https://eodhistoricaldata.com/api/exchanges-list/?api_token={{eod_api_key}}
 
 ###
-GET https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?api_token=637fdf2ad211e8.85627921 
+GET https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?api_token={{eod_api_key}} 
