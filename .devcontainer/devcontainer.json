@@ -16,7 +16,8 @@
 	"forwardPorts": [3000, 5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "npm install && npm install -g knex && knex migrate:latest",
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 
 	// Configure tool-specific properties.
 	 "customizations": {
