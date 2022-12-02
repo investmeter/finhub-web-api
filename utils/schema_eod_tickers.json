@@ -1,0 +1,40 @@
+{
+    "type": "array",
+    "contains": 
+      {
+        "type": "object",
+        "properties": {
+          "Code": {
+            "type": "string"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Country": {
+            "type": "string"
+          },
+          "Exchange": {
+            "type": "string"
+          },
+          "Currency": {
+            "type": "string"
+          },
+          "Type": {
+            "type": "string"
+          },
+          "Isin": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "Code",
+          "Name",
+          "Country",
+          "Exchange",
+          "Currency",
+          "Type",
+          "Isin"
+        ]
+      }
+    
+  }
