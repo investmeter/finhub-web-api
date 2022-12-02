@@ -5,8 +5,33 @@ const Ajv = require("ajv")
 const ajv = new Ajv() 
 
 const schema_eod_tickers_info = require("./schema_eod_tickers.json")
-const validate_eod_tickers_info = ajv.compile(schema_eod_tickers_info)
+const { map } = require('lodash')
+const _validateTickersInfoFromEOD  =  ajv.compile(schema_eod_tickers_info)
 
+const validateTickersInfoFromEOD = (resp) => {
+  if (!_validateTickersInfoFromEOD(resp)) {
+    throw("Tickers data not corresponding with scheme")
+  }
+}  
+
+const mapEODtoSecuritiesTable = (eodTickers) => {
+  
+  const EOD_SECURITIES_TYPES_MAPPING = {
+    "Common Stock":"stock", 
+    "ETF":"etf"
+  }  
+  
+  return eodTickers.map((eodTicker) => {
+      return {
+        "type": EOD_SECURITIES_TYPES_MAPPING[eodTicker.Type],
+        "ticker": eodTicker["Code"],
+        "title": eodTicker["Name"],
+        "currency": eodTicker["Currency"],
+        "provider_info": eodTicker
+        }
+      }
+   )
+} 
 const knex = require('knex')({
     client: 'pg',
     connection: {
@@ -24,14 +49,22 @@ const requestUrl = `https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?a
 
 const start = async () => {
     try {
-        const resp =  await restClient.get(requestUrl) 
-        console.log("Validation: ", validate_eod_tickers_info(resp))
+        const resp =  await restClient.get(requestUrl)
+        validateTickersInfoFromEOD(resp)
 
+        try{
+          const r = await knex('securities').insert(mapEODtoSecuritiesTable(resp))
+          console.log(r)
         }
+        catch(e) {
+          console.log("Error with DB", e)
+        }
+      }
 
     catch(e) {
-        console.log("Runtime Error +",e)
+        console.log("Runtime Error: ",e)
     }
+    process.exit()
 }
 
 start()
