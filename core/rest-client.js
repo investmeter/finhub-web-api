@@ -9,7 +9,7 @@ async function get(requestUrl) {
     https.get(requestUrl, (res) => {
   
       if(res.statusCode != 200 ) {
-        reject("Server error res.statusCode")
+        reject(`Server error ${res.statusCode}`)
       } 
       
       let response = ""  
@@ -19,7 +19,14 @@ async function get(requestUrl) {
       });
     
       res.on('end', ()=>{
-        resolve(JSON.parse(response))
+        try {
+          const resp = JSON.parse(response)
+          resolve(JSON.parse(response))
+        }
+        catch(e) {
+          reject(e)
+        }
+        
       }
     )
     
