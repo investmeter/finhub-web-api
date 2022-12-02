@@ -5,7 +5,7 @@ exports.up = function(knex) {
         .createTable('securities', function (table) {
             table.increments('id')
             table.enu('type',['stock','bond','etf','crypto'])
-            table.string('ticker').notNullable()
+            table.string('ticker').notNullable().unique()
             table.string('title').notNullable()
             table.string('currency').notNullable()
             table.json('provider_info')
