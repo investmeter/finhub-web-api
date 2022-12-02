@@ -56,7 +56,7 @@ const server = new ApolloServer({
     }
 })
 
-server.listen(4000).then(({url}) => {
+server.listen(process.env.SERVER_PORT).then(({url}) => {
     logger.info(`🚀 Server ready at ${url}`)
     //console.log(`🚀 Server ready at ${url}`)
 })
