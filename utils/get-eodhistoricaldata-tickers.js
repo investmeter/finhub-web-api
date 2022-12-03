@@ -50,7 +50,7 @@ const requestUrl = `https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?a
 const start = async () => {
     try {
         console.log("Requesting EOD for MCX tickers...")
-
+        console.log(`Request: ${requestUrl}`)
         const resp =  await restClient.get(requestUrl)
         validateTickersInfoFromEOD(resp)
 
