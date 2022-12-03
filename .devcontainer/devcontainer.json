@@ -13,10 +13,18 @@
 		"ghcr.io/devcontainers/features/git:1": {}
 	},
 
+	"containerEnv": {
+		"DB_HOST": "localhost",
+		"DB_PORT": "5432",
+		"DB_USER": "postgres",
+		"DB_PASSWORD": "postgres",		
+		"DB_DATABASE": "postgres",
+		"SERVER_PORT": "4000"
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or with the host.
-	"forwardPorts": [3000, 5432, 4000],
+	"forwardPorts": [3000, 5432,4000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install && npm install -g knex && knex migrate:latest && node utils/get-eodhistoricaldata-tickers.js",
