@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "npx dotenv-cli -e .env nodemon  ./gateway.js",
     "fetch-tickers": "npx dotenv-cli -e .env node ./utils/get-eodhistoricaldata-tickers.js",
+    "migrate-latest" : "npx dotenv-cli -e .env knex migrate:latest",
     "test": "mocha"
   },
   "dependencies": {
