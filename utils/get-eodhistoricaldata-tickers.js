@@ -49,12 +49,19 @@ const requestUrl = `https://eodhistoricaldata.com/api/exchange-symbol-list/MCX?a
 
 const start = async () => {
     try {
+        console.log("Requesting EOD for MCX tickers...")
+
         const resp =  await restClient.get(requestUrl)
         validateTickersInfoFromEOD(resp)
 
+        console.log("...OK")
+        
+        
         try{
+          console.log("Inserting tickers to DB...")
           const r = await knex('securities').insert(mapEODtoSecuritiesTable(resp))
           console.log(r)
+          console.log("...Ok")
         }
         catch(e) {
           console.log("Error with DB", e)
