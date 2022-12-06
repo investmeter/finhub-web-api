@@ -7,10 +7,10 @@ token:
 database:
   client: postgres
   connection:
-    host: "localhost"
-    database: 'finhub'
+    host: "db"
+    database: 'postgres'
     user: 'postgres'
-    password: '12345'
+    password: 'postgres'
 
 strapi:
   graphql_endpoint: http://localhost:1337/graphql
